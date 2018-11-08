@@ -1,4 +1,4 @@
-% !TEX root = ../practicas_geogebra.tex
+% !TEX root = ../geogebra-practices.tex
 % Author: Alfredo Sánchez Alberca (asalber@ceu.es)
 \chapter{Elementary functions}
 
@@ -126,18 +126,17 @@
 \section{Solved exercises}
 
 \begin{enumerate}[leftmargin=*]
-\item Consider the function
+\item Plot the graph of the function
       \[
       f(t)=\frac{t^{4} +19t^{2} - 5}{t^{4} +9t^{2} - 10}.
       \]
-
-      Representarla gráficamente y determinar a partir de dicha representación:
+      and determine, looking at the graph, the following:
 
       \begin{enumerate}
-      \item  Domain.
+      \item Domain.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the expression \command{(t\^{}4+19t\^{}2-5)/(t\^{}4+9t\^{}2-10)} in the \field{Input Bar} of the \field{Vista CAS View} and activate the \field{Graphics View}.
+            \item Enter the expression \command{(t\^{}4+19t\^{}2-5)/(t\^{}4+9t\^{}2-10)} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
             \item To determine the domain look at the values of $x$ where the function does exists, that is, where there is graph.
             \item Remember that, for this and the other parts of this exercise, we pretend to get approximate conclusions looking at the graph of the function.
             \end{enumerate}
@@ -153,7 +152,7 @@
             Look at the lines (horizontal, vertical or oblique) where the graph approaches (the distance between the graph and the line tends to zero as they tend to infinity).
             \end{indication}
 
-      \item  Roots.
+      \item Roots.
             \begin{indication}
             Look at the values of $x$ where the graph cuts the horizontal axis.
             \end{indication}
@@ -161,7 +160,6 @@
       \item Sign.
             \begin{indication}
             Look at the values of $x$ where the graph is over the horizontal axis (positive) and where it is under the horizontal axis (negative).
-
             \end{indication}
 
       \item Growth.
@@ -185,36 +183,43 @@
             \end{indication}
       \end{enumerate}
 
-\item Representar en una misma gráfica las funciones $2^{x}, e^{x}, 0.7^{x}, 0.5^{x}$.
-      A la vista de las gráficas obtenidas, ¿para qué valores de $a$ será la función creciente? ¿Y para qué valores de $a$ será decreciente?
+\item Plot the graphs of the exponential functions $2^x$, $e^x$, $0.7^x$, $0.5^x$.
+      Looking at the graphs of the functions, determine for which values of the base the exponential function increases and for which ones decreases.
+
       \begin{indication}
       \begin{enumerate}
-      \item Introducir la función \command{2\^{}x} en la in the \field{Input Bar} of the \field{Vista CAS View}.
-      \item Introducir la función \command{e\^{}x} en la \field{Barra de Entrada}.
-      \item Introducir la función \command{0.7\^{}x} en la \field{Barra de Entrada}.
-      \item Introducir la función \command{0.5\^{}x} en la \field{Barra de Entrada}.
-      \item La función exponencial $a^x$ será creciente cuando $a>1$ y decreciente cuando $0<a<1$.
+      \item Enter the expression \command{2\^{}x} in the \field{Input Bar} of the \field{CAS View}.
+      \item Enter the expression \command{e\^{}x} in the \field{Input Bar}.
+      \item Enter the expression \command{0.7\^{}x} in the \field{Input Bar}.
+      \item Enter the expression \command{0.5\^{}x} in the \field{Input Bar}.
+      \item The exponential function $a^x$ increases for $a>1$ and decreases for $0<a<1$.
       \end{enumerate}
       \end{indication}
 
-\item Representar en una misma gráfica las funciones siguientes, indicando su período y amplitud.
+\item Plot the graphs of the following functions and determine their periods and amplitudes.
       \begin{enumerate}
       \item $\sin{x}$, $\sin{x}+2$, $\sin{(x+2)}$.
+            \begin{indication}
+            \begin{enumerate}
+            \item Enter the expression \command{sen(x)} en la in the \field{Input Bar} of the \field{CAS View}.
+            \item Enter the expression \command{sen(x)+2} in the \field{Input Bar}.
+            \item Enter the expression \command{sen(x+2)} in the \field{Input Bar}.
+            \item When a value is added to the sine or to the argument of the sine, the period and the amplitude does not change.
+            \end{enumerate}
+            \end{indication}
       \item $\sin{2x}$, $2\sin{x}$, $\sin\frac{x}{2}$.
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la función \command{sen(x)} en la in the \field{Input Bar} of the \field{Vista CAS View}.
-            \item Introducir la función \command{sen(x)+2} en la \field{Barra de Entrada}.
-            \item Introducir la función \command{sen(x+2)} en la \field{Barra de Entrada}.
-            \item Introducir la función \command{sen(2x)} en la \field{Barra de Entrada}.
-            \item Introducir la función \command{2sen(x)} en la \field{Barra de Entrada}.
-            \item Introducir la función \command{sen(x/2)} en la \field{Barra de Entrada}.
+            \item Enter the expression \command{sen(2x)} in the \field{Input Bar}.
+            \item Enter the expression \command{2sen(x)} in the \field{Input Bar}.
+            \item Enter the expression \command{sen(x/2)} in the \field{Input Bar}.
+            \item When the sine is mulitiplied by a value, the amplitude is multiplied by that value, and when the argument of the sine is multiplied by a value, the period is divided by that value.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
 
-\item Representar en una gráfica la función
+\item Plot the graph of the piecewise function
       \[
       \ f(x)=\left\{
       \begin{array}{cl}
@@ -225,70 +230,65 @@
       \]
 
       \begin{indication}
-      Introducir la función \command{Si(x<=0, -2x, x\^{}2)} en la \field{Barra de Entrada}.
+      Enter the expression \command{If(x<=0, -2x, x\^{}2)} in the \field{Input Bar}.
       \end{indication}
 \end{enumerate}
 
 
-\section{Ejercicios propuestos}
+\section{Proposed exercises}
 \begin{enumerate}[leftmargin=*]
-\item Hallar el dominio de las siguientes funciones a partir de sus representaciones gráficas:
+\item Plot the graphs of the following functions and determine their domains looking at their graphs.
 
       \begin{enumerate}
-      \item $f(x)=\dfrac{x^{2} + x + 1}{x^{3} - x}$
-      \item $g(x)=\sqrt[2]{x^{4}-1}$.
-      \item $h(x)=\cos{\dfrac{x + 3}{x^{2} + 1}}$.
-      \item $l(x)=\arcsin{\dfrac{x}{1+x}}$.
+      \item $f(x)=\dfrac{x^2+x+1}{x^3-x}$
+      \item $g(x)=\sqrt{x^4-1}$.
+      \item $h(x)=\cos\left(\frac{x+3}{x^2+1}\right)$.
+      \item $l(x)=\arcsin\left(\frac{x}{1+x}\right)$.
       \end{enumerate}
 
-\item Se considera la función
+\item Consider the function
       \[
-      \ f(x)=\frac{x^{3} + x +2}{5x^{3} - 9x^{2} - 4x + 4}.
+      f(x)=\frac{x^3+x+2}{5x^3-9x^2-4x+4}.
       \]
 
-      Representarla gráficamente y determinar a partir de dicha representación:
-
+      Plot the function and determine looking at its graph:
       \begin{enumerate}
-      \item Dominio.
-      \item Imagen.
-      \item Asíntotas.
-      \item Raíces.
-      \item Signo.
-      \item Intervalos de crecimiento y decrecimiento.
-      \item Intervalos de concavidad y convexidad.
-      \item Extremos relativos.
-      \item Puntos de inflexión.
+      \item Domain
+      \item Image
+      \item Asymptotes
+      \item Zeros
+      \item Sign
+      \item Continuity
+      \item Increasing and decreasing
+      \item Concavity
+      \item Relative extrema
+      \item Inflection points
       \end{enumerate}
 
-\item Representar en una misma gráfica las funciones $\log_{10}{x}$, $\log_{2}{x}$, $\log{x}$, $\log_{0.5}{x}$.
+\item Plot in the same graphic window the graphs of the functions $\log_{10}x$, $\log_{2}x$, $\log x$, $\log_{0.5}x$.
       \begin{enumerate}
-      \item A la vista de las gráficas obtenidas, indicar cuáles de las funciones anteriores son crecientes y cuáles son decrecientes.
-      \item Determinar, a partir de los resultados obtenidos, o representando nuevas funciones si fuera necesario, para qué valores de $a$ será
-            creciente la función $\log_{a}{x}$.
-      \item Determinar, a partir de los resultados obtenidos, o representando nuevas funciones si fuera necesario, para qué valores de $a$ será
-            decreciente la función $\log_{a}{x}$.
+      \item Looking at their graphs determine which funtions are increasing and which ones are decreasing.
+      \item Deduce for what values of $a$ the function $\log_ax$ is increasing and for what values it is decreasing?
       \end{enumerate}
 
-\item Completar las siguientes frases con la palabra igual, o el número de veces que sea mayor o menor en cada caso:
+\item Plot the following functions and complete the following sentences with the word equal or the number of times that is lower or greater in any case.
       \begin{enumerate}
-      \item La función $\cos{2x}$ tiene un período............ que la función $\cos{x}$.
-      \item La función $\cos{2x}$ tiene una amplitud............ que la función $\cos{x}$.
-      \item La función $\cos\dfrac{x}{2}$ tiene un período............ que la función $\cos{3x}$.
-      \item La función $\cos\dfrac{x}{2}$ tiene una amplitud............ que la función $\cos{3x}$.
-      \item La función $3\cos{2x}$ tiene un período............ que la función $\cos\dfrac{x}{2}$.
-      \item La función $3\cos{2x}$ tiene una amplitud............ que la función $\cos\dfrac{x}{2}$.
+      \item The function $\cos(2x)$ has a period ............ than the function $\cos{x}$.
+      \item The function $\cos(2x)$ has an amplitude ............ than the function $\cos{x}$.
+      \item The function $\cos(x/2)$ has period ............ than the function $\cos(3x)$.
+      \item The function $\cos(x/2)$ has an amplitude ............ than the function $\cos(3x)$.
+      \item The function $3\cos(2x)$ has a period ............ than the function $\cos(x/2)$.
+      \item The function $3\cos(2x)$ has an amplitude ............ than the function $\cos(x/2)$.
       \end{enumerate}
 
-\item Hallar a partir de la representación gráfica, las soluciones de $e^{-1/x}=\dfrac{1}{x}$.
+\item Find the solutions of the equation $e^{-1/x}=\dfrac{1}{x}$  graphically.
 
-\item Representar en una gráfica la función
+\item Plot the graph of the function
       \[
-      \ f(x)=\left\{
-      \begin{array}{ll}
-      x^{3}   & \hbox{si $x<0$}    \\
-      e^{x}-1 & \hbox{si $x\geq0$} \\
-      \end{array}
-      \right.
+      f(x)=
+      \begin{cases}
+      x^3   & \mbox{if $x<0$}    \\
+      e^x-1 & \mbox{if $x\geq0$}
+      \end{cases}
       \]
-
 \end{enumerate}
