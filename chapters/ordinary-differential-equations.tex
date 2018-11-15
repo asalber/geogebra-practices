@@ -6,12 +6,12 @@
 % Muchos fenómenos de la naturaleza como la desintegración radiactiva, algunas reacciones químicas, el crecimiento de
 % poblaciones o algunos problemas gravitatorios responden a determinadas ecuaciones en las que se relaciona una función
 % con sus derivadas. 
-% Este tipo de ecuaciones se conocen como \emph{ecuaciones diferenciales} and en esta práctica
+% Este tipo de ecuaciones se conocen como \emph{ecuaciones diferenciales} y en esta práctica
 % estudiaremos cómo resolverlas.
 
 % \subsection{Ecuaciones diferenciales ordinarias (E.D.O.)}
 % Se llama \emph{ecuación diferencial ordinaria (E.D.O.)} a una relación entre una variable independiente $x$, una función
-% desconocida $y(x)$, and alguna de las derivadas de $y$ con respecto a $x$. 
+% desconocida $y(x)$, y alguna de las derivadas de $y$ con respecto a $x$. 
 % Esto es, a una expresión de la forma
 % \[
 % F(x,y,y',y'',...,y^{(n})=0.
@@ -24,10 +24,10 @@
 
 % \subsubsection*{Solución de una E.D.O.}
 % Diremos que una función $f(x)$ es \emph{solución} o \emph{integral} de la EDO $F(x,y,y',y'',...,y^{(n})=0$, si al
-% sustituir en ella $y$ and sus derivadas por $f(x)$ and sus derivadas respectivas, la ecuación se satisface, es decir
+% sustituir en ella $y$ y sus derivadas por $f(x)$ y sus derivadas respectivas, la ecuación se satisface, es decir
 % $F(x,f(x),f'(x),f''(x),...,f^{(n}(x))=0$.
 
-% En general una ecuación diferencial admite infinitas soluciones, and se limita su número imponiendo condiciones iniciales.
+% En general una ecuación diferencial admite infinitas soluciones, y se limita su número imponiendo condiciones iniciales.
 
 % \subsection{Ecuaciones diferenciales ordinarias de primer orden}
 % Una ecuación diferencial ordinaria de primer orden es una ecuación de la forma
@@ -39,7 +39,7 @@
 % M(x,y)dx+N(x,y)dy=0.
 % \]
 
-% \subsubsection*{Soluciones general and particular de una E.D.O. de primer orden}
+% \subsubsection*{Soluciones general y particular de una E.D.O. de primer orden}
 % Se llama \emph{solución general} o \emph{integral general} de una ecuación diferencial ordinaria de primer orden a una
 % función $y=f(x,c)$, donde $c$ es una constante real, tal que para cada valor de $c$, la función $y=f(x,c)$ es una
 % solución de la ecuación diferencial. 
@@ -49,16 +49,16 @@
 % En la práctica, la determinación de las constantes que conducen a una solución particular se realiza imponiendo ciertas
 % condiciones iniciales en el problema, que son los valores que debe tomar la solución en determinados puntos. 
 % Así, para una ecuación diferencial ordinaria de primer orden $y'=F(x,y)$, una condición inicial se expresaría de la
-% forma $y(x_{0})=y_{0}$, and la solución particular sería una función $y=f(x)$ tal que $f'(x)=F(x,f(x))$, and $f(x_0)=y_0$.
+% forma $y(x_{0})=y_{0}$, y la solución particular sería una función $y=f(x)$ tal que $f'(x)=F(x,f(x))$, y $f(x_0)=y_0$.
 
 % Por ejemplo, si consideramos la ecuación diferencial $y'=y$, resulta sencillo comprobar que su solución general es
-% $f(x)=ce^x$, ya que $f'(x)=ce^x$ and se cumple la ecuación. 
+% $f(x)=ce^x$, ya que $f'(x)=ce^x$ y se cumple la ecuación. 
 % Si para esta misma ecuación tenemos la condición inicial $y(0)=1$, entonces, al imponer dicha condición a la solución
-% general, se tiene $f(0)=ce^0=1$, de donde se deduce que $c=1$, and por tanto la solución particular sería $f(x)=e^x$.
+% general, se tiene $f(0)=ce^0=1$, de donde se deduce que $c=1$, y por tanto la solución particular sería $f(x)=e^x$.
 
 % Geométricamente, la solución general de una ecuación diferencial de primer orden representa una familia de curvas,
 % denominadas \emph{curvas integrales}, una para cada valor concreto asignado a la constante arbitraria. 
-% En la figure~\ref{g:curvas integrales} se muestran las curvas integrales de la ecuación diferencial $y'=y$.
+% En la figura~\ref{g:curvas integrales} se muestran las curvas integrales de la ecuación diferencial $y'=y$.
 
 % \begin{figure}[h!]
 % \begin{center}
@@ -68,13 +68,13 @@
 % \end{center}
 % \end{figure}
 
-% \subsubsection*{Existencia and unicidad de soluciones}
-% El siguiente teorema aporta una condición suficiente, aunque no necesaria, para la existencia and la unicidad de la
+% \subsubsection*{Existencia y unicidad de soluciones}
+% El siguiente teorema aporta una condición suficiente, aunque no necesaria, para la existencia y la unicidad de la
 % solución de una ecuación diferencial ordinaria de primer orden.
 
 % \begin{teoremasn}
-% Si $F(x,y)$ and $\partial F/\partial y$ son funciones continuas en un entorno del punto $(x_0,y_0)$, entonces la ecuación
-% diferencial $y'=F(x,y)$ tiene una solución $y=f(x)$ que verifica $f(x_0)=y_0$, and además esa solución es única.
+% Si $F(x,y)$ y $\partial F/\partial y$ son funciones continuas en un entorno del punto $(x_0,y_0)$, entonces la ecuación
+% diferencial $y'=F(x,y)$ tiene una solución $y=f(x)$ que verifica $f(x_0)=y_0$, y además esa solución es única.
 % \end{teoremasn}
 % Cuando no se cumplen las condiciones del teorema hay que tener cuidado porque la ecuación puede no tener solución, o
 % bien tener soluciones múltiples como ocurre con la ecuación $y'=3\sqrt[3]{y^2}$, que tiene dos soluciones $y=0$ y
@@ -84,14 +84,14 @@
 % Desafortunadamente, el teorema anterior sólo nos habla de la existencia de una solución pero no nos proporciona la forma
 % de obtenerla. 
 % En general, no existe una única técnica de resolución de ecuaciones diferenciales ordinarias de primer orden
-% $M(x,y)dx+N(x,y)dy=0$, sino que dependiendo de la forma que tengan $M(x,y)$ and $N(x,y)$, se utilizan distintas técnicas.
+% $M(x,y)dx+N(x,y)dy=0$, sino que dependiendo de la forma que tengan $M(x,y)$ y $N(x,y)$, se utilizan distintas técnicas.
 
 
 % \subsection{EDO de variables separables}
 % Una E.D.O. de primer orden es de \emph{variables separables} si se puede poner de la forma $y'g(y)=f(x)$ o bien
-% $M(x)dx+N(y)dy=0$, donde $M(x)$ es una función que sólo depende de $x$ and $N(y)$ sólo depende de $y$.
+% $M(x)dx+N(y)dy=0$, donde $M(x)$ es una función que sólo depende de $x$ y $N(y)$ sólo depende de $y$.
 
-% La solución de una ecuación de este tipo se obtiene fácilmente integrando $M(x)$ and $N(y)$ por separado, es decir
+% La solución de una ecuación de este tipo se obtiene fácilmente integrando $M(x)$ y $N(y)$ por separado, es decir
 % \[
 % \int M(x)\,dx=-\int N(y)\,dy.
 % \]
@@ -100,13 +100,13 @@
 % Se dice que una función $F(x,y)$ es \emph{homogénea} de grado $n$ si se cumple $F(kx,ky)=k^nF(x,y)$.
 
 % Una E.D.O. de primer orden es \emph{homogénea} si se puede poner de la forma
-% $y'=f\left(\dfrac{y}{x}\right)$ o bien $M(x,y)dx+N(x,y)dy=0$ donde $M(x,y)$ and $N(x,y)$ son funciones homogéneas del mismo grado.
+% $y'=f\left(\dfrac{y}{x}\right)$ o bien $M(x,y)dx+N(x,y)dy=0$ donde $M(x,y)$ y $N(x,y)$ son funciones homogéneas del mismo grado.
 
 % Las ecuaciones homogéneas son fácilmente reducibles a ecuaciones de variables separables mediante el cambio $y=ux$,
 % siendo $u$ una función derivable de $x$.
 
 % \subsection{EDO Lineales}
-% Una E.D.O. de primer orden es \emph{lineal} si se puede poner de la forma $y'+ P(x)y = Q(x)$, donde $P$ and $Q$ son
+% Una E.D.O. de primer orden es \emph{lineal} si se puede poner de la forma $y'+ P(x)y = Q(x)$, donde $P$ y $Q$ son
 % funciones continuas de $x$.
 
 % Para resolver este tipo de ecuaciones se utiliza la técnica de los factores integrantes. 
@@ -136,43 +136,43 @@
 \section{Ejercicios resueltos}
 
 \begin{enumerate}[leftmargin=*]
-\item Resolver las siguientes ecuaciones diferenciales de variables separables and dibujar sus curvas integrales para distintos valores de la constante de integración:
+\item Resolver las siguientes ecuaciones diferenciales de variables separables y dibujar sus curvas integrales para distintos valores de la constante de integración:
       \begin{enumerate}
       \item $xdy=ydx$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(y'=y/x)} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO(y'=y/x)} in the \field{Input Bar} of the \field{CAS View}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-            \item Para hacer variar la constante de integración and obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} and mover el deslizador correspondiente a la constante.
+            \item Para hacer variar la constante de integración y obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} y mover el deslizador correspondiente a la constante.
             \end{enumerate}
             \end{indication}
 
       \item $-2x(1+e^y)+e^y(1+x^{2})y'=0$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(-2x(1+e\^{}y)+e\^{}y(1+x\^{}2)y'=0)} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO(-2x(1+e\^{}y)+e\^{}y(1+x\^{}2)y'=0)} in the \field{Input Bar} of the \field{CAS View}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-            \item Para hacer variar la constante de integración and obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} and mover el deslizador correspondiente a la constante.
+            \item Para hacer variar la constante de integración y obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} y mover el deslizador correspondiente a la constante.
             \end{enumerate}
             \end{indication}
 
       \item $y-xy'=1+x^2y'$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(y-x*y'=1+x\^{}2*y')} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO(y-x*y'=1+x\^{}2*y')} in the \field{Input Bar} of the \field{CAS View}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-            \item Para hacer variar la constante de integración and obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} and mover el deslizador correspondiente a la constante.
+            \item Para hacer variar la constante de integración y obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} y mover el deslizador correspondiente a la constante.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
 
-\item Resolver and representar gráficamente las siguientes ecuaciones diferenciales con las condiciones iniciales dadas.
+\item Resolver y representar gráficamente las siguientes ecuaciones diferenciales con las condiciones iniciales dadas.
       \begin{enumerate}
       \item $xdy=ydx$, con la condición inicial $y(1)=2$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(y'=y/x, (1,2))} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO(y'=y/x, (1,2))} in the \field{Input Bar} of the \field{CAS View}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
@@ -180,7 +180,7 @@
       \item $x\sqrt{1-y^2}+y\sqrt{1-x^2} y'=0$, con la condición inicial $y(0)=1$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(xsqrt(1-y\^{}2)+ysqrt(1-x\^{}2)y'=0, (0,1))} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO(xsqrt(1-y\^{}2)+ysqrt(1-x\^{}2)y'=0, (0,1))} in the \field{Input Bar} of the \field{CAS View}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
@@ -188,7 +188,7 @@
       \item $s'+s\cos t=\sin t\cos t$ con la condición inicial $s(0)=1$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(s'+s*cos(t)=sen(t)cos(t), s, t, (0,1))} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO(s'+s*cos(t)=sen(t)cos(t), s, t, (0,1))} in the \field{Input Bar} of the \field{CAS View}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
@@ -196,13 +196,13 @@
       \item $(1+e^x)yy'=e^y$, con la condición inicial $y(0)=0$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO((1+e\^{}x)yy'=e\^{}y, (0,0))} in the \field{Input Bar} of the  \field{CAS View}.
+            \item Enter the command \command{ResuelveEDO((1+e\^{}x)yy'=e\^{}y, (0,0))} in the \field{Input Bar} of the \field{CAS View}.
             \item En este caso, Geogegra no es capaz de encontrar la solución particular de esta ecuación, pero podemos intentar resolverla separando las variables e integrando.
             \item Tras separar las variables se tiene la igualdad $\frac{y}{e^y}dy = \frac{1}{1+e^x}dx$, de manera que sólo hay que integrar a cada lado.
-                  Para ello Enter the command \command{Integral(y/e\^{}y) - Integral(1/(1+e\^{}x))} in the \field{Input Bar}.
-            \item En la solución aparecen dos constantes $c_1$ and $c_2$, pero realmente se puede eliminar una pasándola al otro lado.
-                  Para ello Enter the command \command{Sustituye(\$, c\_{}2=0)} in the \field{Input Bar}.
-            \item Para imponer la condición inicial Enter the command \command{Sustituye(\$, x=0, y=0)} in the \field{Input Bar}.
+                  Para ello enter the command \command{Integral(y/e\^{}y) - Integral(1/(1+e\^{}x))} in the \field{Input Bar}.
+            \item En la solución aparecen dos constantes $c_1$ y $c_2$, pero realmente se puede eliminar una pasándola al otro lado.
+                  Para ello enter the command \command{Sustituye(\$, c\_{}2=0)} in the \field{Input Bar}.
+            \item Para imponer la condición inicial enter the command \command{Sustituye(\$, x=0, y=0)} in the \field{Input Bar}.
             \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
@@ -210,18 +210,18 @@
 
 
 \item El azúcar se disuelve en el agua con una velocidad proporcional a la cantidad que queda por disolver.
-      Si inicialmente había $13.6$ kg de azúcar and al cabo de $4$ horas quedan sin disolver $4.5$ kg, ¿cuánto tardará en disolverse el $95\%$ del
+      Si inicialmente había $13.6$ kg de azúcar y al cabo de $4$ horas quedan sin disolver $4.5$ kg, ¿cuánto tardará en disolverse el $95\%$ del
       azúcar contando desde el instante inicial?
       \begin{indication}
       \begin{enumerate}
-      \item La ecuación diferencial que explica la disolución del azúcar es $a'=ka$, donde $a$ es la cantidad de azúcar que queda por disolver, $t$ es el tiempo and $k$ es la constante de disolución del azúcar.
-      \item Para resolver la ecuación diferencial Enter the command \command{ResuelveEDO(a'=k*a, a, t, (0, 13.6)} in the \field{Input Bar} of the  \field{CAS View}.
-      \item Para imponer la segunda condición inicial Enter the command \command{Sustituye(\$, t=4, a=4.5)} in the \field{Input Bar}.
-      \item Para obtener el valor de la constante de disolución Enter the command \command{Resuelve(\$)} in the \field{Input Bar}.
-      \item Para sustituir el valor de la constante de disolución en la solución particular Enter the command  \command{Sustituye(\$$n$,\$)} in the \field{Input Bar}, donde $n$ es el identificador de la expresión que contienen la solución de la ecuación diferencial.
+      \item La ecuación diferencial que explica la disolución del azúcar es $a'=ka$, donde $a$ es la cantidad de azúcar que queda por disolver, $t$ es el tiempo y $k$ es la constante de disolución del azúcar.
+      \item Para resolver la ecuación diferencial enter the command \command{ResuelveEDO(a'=k*a, a, t, (0, 13.6)} in the \field{Input Bar} of the \field{CAS View}.
+      \item Para imponer la segunda condición inicial enter the command \command{Sustituye(\$, t=4, a=4.5)} in the \field{Input Bar}.
+      \item Para obtener el valor de la constante de disolución enter the command \command{Resuelve(\$)} in the \field{Input Bar}.
+      \item Para sustituir el valor de la constante de disolución en la solución particular enter the command  \command{Sustituye(\$$n$,\$)} in the \field{Input Bar}, donde $n$ es el identificador de la expresión que contienen la solución de la ecuación diferencial.
       \item El azúcar que quedará sin disolver tras disolverse el 95\% de la cantidad inicial es el 5\% de esta cantidad.
-            Para sustituir esta cantidad de azúcar en la solución de la ecuación diferencial Enter the command \command{Sustituye(\$,13.6*0.05)} in the \field{Input Bar}.
-      \item Finalmente, para obtener la predicción del tiempo Enter the command  \command{Resuelve(\$)} in the \field{Input Bar}.
+            Para sustituir esta cantidad de azúcar en la solución de la ecuación diferencial enter the command \command{Sustituye(\$,13.6*0.05)} in the \field{Input Bar}.
+      \item Finalmente, para obtener la predicción del tiempo enter the command  \command{Resuelve(\$)} in the \field{Input Bar}.
       \end{enumerate}
       \end{indication}
 
@@ -249,11 +249,11 @@
       \[
       \frac{dc}{dt}=\frac{G}{100V}-kc,
       \]
-      donde $G$ es la velocidad constante a la que se suministra la glucosa, $V$ es el volumen total de la sangre en el cuerpo and $k$ es una constante positiva que depende del paciente. Se pide calcular $c(t)$.
+      donde $G$ es la velocidad constante a la que se suministra la glucosa, $V$ es el volumen total de la sangre en el cuerpo y $k$ es una constante positiva que depende del paciente. Se pide calcular $c(t)$.
 
 \item En una reacción química, un cierto compuesto se transforma en otra sustancia a un ritmo proporcional a la cantidad
       no transformada.
-      Si había inicialmente 100 gr de sustancia original and 60 gr tras una hora, ¿cuanto tiempo pasará hasta
+      Si había inicialmente 100 gr de sustancia original y 60 gr tras una hora, ¿cuanto tiempo pasará hasta
       que se haya transformado el 80\% del compuesto?
 \end{enumerate}
 

@@ -7,7 +7,7 @@
 % del cálculo matemático. Aunque dicho concepto surge en principio, como técnica
 % para el cálculo de áreas, el teorema fundamental del cálculo establece su
 % relación con la derivada, de manera que, en cierto sentido, la diferenciación
-% and la integración son operaciones inversas.
+% y la integración son operaciones inversas.
 
 % En esta práctica se introduce el concepto de integral como antiderivada, y
 % también el de integral de Riemann, que permite calcular áreas por debajo de
@@ -26,17 +26,17 @@
 % \subsubsection*{Función integral indefinida}
 
 % Se llama \emph{función integral indefinida} de la función $f(x)$ al
-% conjunto de todas sus funciones primitivas and se representa como:
+% conjunto de todas sus funciones primitivas y se representa como:
 
 % \[
 % \ \int{f(x)}\,dx=F(x)+C
 % \]
-% siendo $F(x)$ una función primitiva de $f(x)$ and $C$ una constante arbitraria.\\
+% siendo $F(x)$ una función primitiva de $f(x)$ y $C$ una constante arbitraria.\\
 
 
 % \subsubsection*{Linealidad de la integral}
 
-% Dadas dos funciones $f(x)$ and $g(x)$ que admiten primitiva, and una
+% Dadas dos funciones $f(x)$ y $g(x)$ que admiten primitiva, y una
 % constante $k \in \mathbb{R}$ se verifica que:
 
 % \[
@@ -56,9 +56,9 @@
 % $x_{0}=a<x_{1}<...<x_{n}=b$, con lo que el intervalo $[a,b]$ queda
 % dividido en $n$ subintervalos $[x_{i},x_{i+1}]$, $i=0,...,n-1$.
 
-% Dada una función $f:[a,b]\rightarrow\mathbb{R}$ acotada and una
+% Dada una función $f:[a,b]\rightarrow\mathbb{R}$ acotada y una
 % partición $P=\{x_{0},x_{1},...,x_{n}\}$ de $[a,b]$, se llama
-% \emph{suma inferior} de $f$ en relación a $P$, and se designa por
+% \emph{suma inferior} de $f$ en relación a $P$, y se designa por
 % $L(P,f)$, a:
 
 % \[
@@ -67,21 +67,21 @@
 % donde $  m_{i}=\inf\{f(x):x_{i-1}\leq x \leq x_{i}\}$.
 
 % Análogamente se llama \emph{suma superior} de $f$ en relación a $P$,
-% and se designa por $U(P,f)$, a:
+% y se designa por $U(P,f)$, a:
 
 % \[
 % \ U(P,f)=\sum_{i=1}^{n} M_{i}(x_{i}-x_{i-1})
 % \]
 % donde $ M_{i}=\sup\{f(x):x_{i-1}\leq x \leq x_{i}\}$.
 
-% La \emph{suma inferior} and la \emph{suma superior} así definidas
+% La \emph{suma inferior} y la \emph{suma superior} así definidas
 % representan las sumas de las áreas de los rectángulos que tienen por
-% bases los subintervalos de la partición, and por alturas los valores
-% mínimo and máximo respectivamente de la función $f$ en los
-% subintervalos considerados, tal and como se muestra en la
-% figure~\ref{g:sumassupinf}. Así, los valores de $L(P,f)$ and $U(P,f)$
-% serán siempre menores and mayores respectivamente, que el área
-% encerrada por la función $f$ and el eje de abscisas en el intervalo
+% bases los subintervalos de la partición, y por alturas los valores
+% mínimo y máximo respectivamente de la función $f$ en los
+% subintervalos considerados, tal y como se muestra en la
+% figura~\ref{g:sumassupinf}. Así, los valores de $L(P,f)$ y $U(P,f)$
+% serán siempre menores y mayores respectivamente, que el área
+% encerrada por la función $f$ y el eje de abscisas en el intervalo
 % $[a,b]$.
 
 % \begin{figure}[htbp]
@@ -102,7 +102,7 @@
 % \ \sup\{L(P,f): P \textrm{ partición de } [a,b]\}=\inf\{U(P,f): P
 % \textrm{ partición de }[a,b]\}
 % \]
-% and ese número se designa por $\int_{a}^{b}f(x)\,dx$ o simplemente por
+% y ese número se designa por $\int_{a}^{b}f(x)\,dx$ o simplemente por
 % $\int_{a}^{b}f$.
 
 
@@ -112,7 +112,7 @@
 
 % \item \textbf{Linealidad}
 
-% Dadas dos funciones $f$ and $g$ integrables en $[a,b]$ and $k \in
+% Dadas dos funciones $f$ y $g$ integrables en $[a,b]$ y $k \in
 % \mathbb{R}$ se verifica que:
 
 % \[
@@ -126,7 +126,7 @@
 
 % \item \textbf{Monotonía}
 
-% Dadas dos funciones $f$ and $g$ integrables en $[a,b]$ and tales que
+% Dadas dos funciones $f$ y $g$ integrables en $[a,b]$ y tales que
 % $f(x)\leq g(x)$ $\forall x \in [a,b]$ se verifica que:
 
 
@@ -145,8 +145,8 @@
 
 % \item \textbf{Aditividad}
 
-% Si $f$ es una función acotada en $[a,b]$ and $c\in(a,b)$, entonces $f$
-% es integrable en $[a,b]$ si and sólo si lo es en $[a,c]$ and en $[c,b]$,
+% Si $f$ es una función acotada en $[a,b]$ y $c\in(a,b)$, entonces $f$
+% es integrable en $[a,b]$ si y sólo si lo es en $[a,c]$ y en $[c,b]$,
 % verificándose además:
 
 % \[
@@ -158,9 +158,9 @@
 
 % \subsubsection*{Teorema Fundamental del Cálculo}
 
-% Sea $f : [a,b]\rightarrow\mathbb{R}$ continua and sea $G$ una función
+% Sea $f : [a,b]\rightarrow\mathbb{R}$ continua y sea $G$ una función
 % continua en $[a,b]$. Entonces $G$ es derivable en $(a,b)$ y
-% $G'(x)=f(x)$ para todo $x\in(a,b)$ si and sólo si:
+% $G'(x)=f(x)$ para todo $x\in(a,b)$ si y sólo si:
 
 % \[
 % \ G(x)-G(a) = \int_{a}^{x}f(t)\,dt
@@ -168,8 +168,8 @@
 
 % \subsubsection*{Regla de Barrow}
 
-% Si $f$ es una función continua en $[a,b]$ and $G$ es continua en
-% $[a,b]$, derivable en $(a,b)$ and tal que $G'(x)=f(x)$ para todo
+% Si $f$ es una función continua en $[a,b]$ y $G$ es continua en
+% $[a,b]$, derivable en $(a,b)$ y tal que $G'(x)=f(x)$ para todo
 % $x\in(a,b)$ entonces:
 
 % \[
@@ -201,10 +201,10 @@
 
 % \subsubsection*{Área de una región plana encerrada por dos curvas}
 
-% Si $f$ and $g$ son dos funciones integrables en el intervalo $[a,b]$ y
+% Si $f$ y $g$ son dos funciones integrables en el intervalo $[a,b]$ y
 % se verifica que $g(x)\leq f(x)$ $\forall x\in[a,b]$, entonces el
 % área de la región plana limitada por las curvas $y=f(x)$, $y=g(x)$,
-% and las rectas $x=a$ and $x=b$ viene dada por:
+% y las rectas $x=a$ y $x=b$ viene dada por:
 
 % \[
 % \ A = \int_{a}^{b}{(f(x)- g(x))\,dx}
@@ -214,26 +214,26 @@
 
 % \begin{enumerate}
 
-% \item El intervalo $(a,b)$ puede ser infinito and la definición sería análoga, pero en ese caso es preciso que la integral impropia sea convergente.
+% \item El intervalo $(a,b)$ puede ser infinito y la definición sería análoga, pero en ese caso es preciso que la integral impropia sea convergente.
 
-% \item Si $f(x)\geq0$ and $g(x)=0$ al calcular la integral entre $a$ and $b$ se obtiene el área encerrada por la función $f(x)$ and el eje de abscisas entre las rectas verticales $x=a$ and $x=b$ (figure~\ref{g:integral_definida}).
+% \item Si $f(x)\geq0$ y $g(x)=0$ al calcular la integral entre $a$ y $b$ se obtiene el área encerrada por la función $f(x)$ y el eje de abscisas entre las rectas verticales $x=a$ y $x=b$ (figura~\ref{g:integral_definida}).
 
 % \begin{figure}[h!]
 % \begin{center}
 % \scalebox{1}{\input{img/integrales/integral_definida}}
-% \caption{Cálculo de área encerrada por la función $f(x)$ and el eje de
-% abscisas entre las rectas verticales $x=a$ and $x=b$  mediante la
+% \caption{Cálculo de área encerrada por la función $f(x)$ y el eje de
+% abscisas entre las rectas verticales $x=a$ y $x=b$  mediante la
 % integral definida.} \label{g:integral_definida}
 % \end{center}
 % \end{figure}
 
-% \item Si $f(x)\geq 0$ $\forall x\in[a,c]$ and $f(x)\leq 0$ $\forall x\in[c,b]$, el área de la región plana encerrada por $f$, las rectas verticales $x=a$ and $x=b$ and el eje de abscisas se calcula
+% \item Si $f(x)\geq 0$ $\forall x\in[a,c]$ y $f(x)\leq 0$ $\forall x\in[c,b]$, el área de la región plana encerrada por $f$, las rectas verticales $x=a$ y $x=b$ y el eje de abscisas se calcula
 % mediante:
 % \[
 % \ A= \int_{a}^{c}{f(x)\,dx} - \int_{c}^{b}{f(x)\,dx}.
 % \]
 
-% \item Si las curvas $y=f(x)$ e $y=g(x)$ se cortan en los puntos de abscisas $a$ and $b$, no cortándose en ningún otro punto cuya abscisa esté comprendida entre $a$ and $b$, el área encerrada por dichas curvas entre esos puntos de corte puede calcularse
+% \item Si las curvas $y=f(x)$ e $y=g(x)$ se cortan en los puntos de abscisas $a$ y $b$, no cortándose en ningún otro punto cuya abscisa esté comprendida entre $a$ y $b$, el área encerrada por dichas curvas entre esos puntos de corte puede calcularse
 % mediante:
 % \[
 % \ A= \int_{a}^{b}{|f(x)-g(x)|dx}
@@ -248,7 +248,7 @@
 % perpendicular al eje $OX$ da lugar, en cada punto de abscisa $x$, a
 % una sección de área $A(x)$, el volumen de dicho cuerpo comprendido
 % entre los planos perpendiculares al eje $OX$ en los puntos de
-% abscisas $a$ and $b$ es:
+% abscisas $a$ y $b$ es:
 
 % \[
 % \ V = \int_{a}^{b}{A(x)\,dx}
@@ -257,8 +257,8 @@
 % \subsubsection*{Volumen de un cuerpo de revolución}
 % Si se hace girar la curva $y=f(x)$ alrededor del eje $OX$ se genera
 % un sólido de revolución cuyas secciones perpendiculares al eje $OX$
-% tienen áreas $A(x)=\pi(f(x))^{2}$, and cuyo volumen comprendido entre
-% las abscisas $a$ and $b$ será:
+% tienen áreas $A(x)=\pi(f(x))^{2}$, y cuyo volumen comprendido entre
+% las abscisas $a$ y $b$ será:
 
 % \[
 % \ V = \int_{a}^{b}{\pi(f(x))^{2}\,dx}=
@@ -268,7 +268,7 @@
 
 % En general, el volumen del cuerpo de revolución engendrado al girar
 % alrededor del eje $OX$ la región plana limitada por las curvas
-% $y=f(x)$, $y=g(x)$ and las rectas verticales $x=a$ and $x=b$ es:
+% $y=f(x)$, $y=g(x)$ y las rectas verticales $x=a$ y $x=b$ es:
 
 % \[
 % \ V = \int_{a}^{b}{\pi|(f(x))^{2}-(g(x))^{2}|\,dx}
@@ -286,37 +286,37 @@
 \section{Ejercicios resueltos}
 
 \begin{enumerate}[leftmargin=*]
-\item Compute las siguientes integrales:
+\item Calcular las siguientes integrales:
       \begin{enumerate}
       \item $ \int{x^2 \log x\,dx}$
             \begin{indication}
-            Enter the command \command{Integral(x\^{}2log(x))} in the \field{Input Bar} of the  \field{CAS View}.
+            Enter the command \command{Integral(x\^{}2log(x))} in the \field{Input Bar} of the \field{CAS View}.
             \end{indication}
 
       \item $\displaystyle \int \frac{\log(\log x)}{x}\,dx$
             \begin{indication}
-            Enter the command \command{Integral(log(log(x))/x)} in the \field{Input Bar} of the  \field{CAS View}.
+            Enter the command \command{Integral(log(log(x))/x)} in the \field{Input Bar} of the \field{CAS View}.
             \end{indication}
 
       \item $\displaystyle \int \frac{5x^{2}+4x+1}{x^{5}-2x^{4}+2x^{3}-2x^{2}+x}\,dx$
             \begin{indication}
-            Enter the command \command{Integral((5x\^{}2+4x+1)/(x\^{}5-2x\^{}4+2x\^{}3-2x\^{}2+x))} in the \field{Input Bar} of the  \field{CAS View}.
+            Enter the command \command{Integral((5x\^{}2+4x+1)/(x\^{}5-2x\^{}4+2x\^{}3-2x\^{}2+x))} in the \field{Input Bar} of the \field{CAS View}.
             \end{indication}
 
       \item $\displaystyle \int \frac{6x+5}{(x^{2}+x+1)^{2}}\,dx$
             \begin{indication}
-            Enter the command \command{Integral((6x+5)/((x\^{}2+x+1)\^{}2))} in the \field{Input Bar} of the  \field{CAS View}.
+            Enter the command \command{Integral((6x+5)/((x\^{}2+x+1)\^{}2))} in the \field{Input Bar} of the \field{CAS View}.
             \end{indication}
       \end{enumerate}
 
 
-\item Compute las siguientes integrales definidas and representarlas gráficamente:
+\item Calcular las siguientes integrales definidas y representarlas gráficamente:
       \begin{enumerate}
       \item $\displaystyle \int_{-\frac{1}{2}}^0 \frac{x^{3}}{x^{2}+x+1}\,dx$
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la función \command{f(x):=x\^{}3/(x\^{}2+x+1)} in the \field{Input Bar} of the  \field{CAS View} and activate the \field{Graphics View}.
-            \item Enter the command \command{Integral(f(x), -1/2, 0)} and hacer clic en el botón de \button{Valor numérico}.
+            \item Introducir la función \command{f(x):=x\^{}3/(x\^{}2+x+1)} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
+            \item Enter the command \command{Integral(f(x), -1/2, 0)} y hacer clic en el botón de \button{Valor numérico}.
             \item Para representar gráficamente la región que abarca la integral definida, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
@@ -324,8 +324,8 @@
       \item $\displaystyle \int_2^4 \frac{\sqrt{16-x^{2}}}{x}\,dx$
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la función \command{g(x):=sqrt(16-x\^{}2)/x} in the \field{Input Bar} of the  \field{CAS View}.
-            \item Enter the command \command{Integral(g(x), 2, 4)} and hacer clic en el botón de \button{Valor numérico}.
+            \item Introducir la función \command{g(x):=sqrt(16-x\^{}2)/x} in the \field{Input Bar} of the \field{CAS View}.
+            \item Enter the command \command{Integral(g(x), 2, 4)} y hacer clic en el botón de \button{Valor numérico}.
             \item Para representar gráficamente la región que abarca la integral definida, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
@@ -333,53 +333,53 @@
       \item $\displaystyle \int_0^{\frac{\pi}{2}} \frac{dx}{3+\cos(2x)}$
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la función \command{h(x):=1/(3+cos(2x))} in the \field{Input Bar} of the  \field{CAS View}.
-            \item Enter the command \command{Integral(h(x), 0, pi/2)} and hacer clic en el botón de \button{Valor numérico}.
+            \item Introducir la función \command{h(x):=1/(3+cos(2x))} in the \field{Input Bar} of the \field{CAS View}.
+            \item Enter the command \command{Integral(h(x), 0, pi/2)} y hacer clic en el botón de \button{Valor numérico}.
             \item Para representar gráficamente la región que abarca la integral definida, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
-\item Compute la siguiente integral impropia $\int_2^{\infty} x^2e^{-x}\,dx$ and representarla gráficamente.
+\item Calcular la siguiente integral impropia $\int_2^{\infty} x^2e^{-x}\,dx$ y representarla gráficamente.
       \begin{indication}
       \begin{enumerate}
-      \item Introducir la función \command{f(x):=x\^{}2 exp(-x)} in the \field{Input Bar} of the  \field{CAS View} and activate the \field{Graphics View}.
-      \item Enter the command \command{Integral(f(x), 2, inf)} and hacer clic en el botón de \button{Valor numérico}.
+      \item Introducir la función \command{f(x):=x\^{}2 exp(-x)} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
+      \item Enter the command \command{Integral(f(x), 2, inf)} y hacer clic en el botón de \button{Valor numérico}.
       \item Para representar gráficamente la región que abarca la integral impropia, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
       \end{enumerate}
       \end{indication}
 
 
-\item Representar la parábola $y=x^{2}-7x+6$, and calcular el área limitada por dicha parábola, el eje de abscisas and las rectas $x=2$ and $x=7$.
+\item Representar la parábola $y=x^{2}-7x+6$, y calcular el área limitada por dicha parábola, el eje de abscisas y las rectas $x=2$ y $x=7$.
       \begin{indication}
       \begin{enumerate}
-      \item Introducir la función \command{f(x):=x\^{}2-7x+6} in the \field{Input Bar} of the  \field{CAS View} and activate the \field{Graphics View}.
-      \item Como $f$ toma valores positivos and negativos en el intervalo $(2,7)$, para obtener el área comprendida entre la $f$ and el eje de abscisas en este intervalo hay que calcular la integral del valor absoluto de $f$.
-            Para ello Enter the command \command{Integral(abs(f(x)), 2, 7)} and hacer clic en el botón de \button{Valor numérico}.
+      \item Introducir la función \command{f(x):=x\^{}2-7x+6} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
+      \item Como $f$ toma valores positivos y negativos en el intervalo $(2,7)$, para obtener el área comprendida entre la $f$ y el eje de abscisas en este intervalo hay que calcular la integral del valor absoluto de $f$.
+            Para ello enter the command \command{Integral(abs(f(x)), 2, 7)} y hacer clic en el botón de \button{Valor numérico}.
       \item Para representar gráficamente la región que abarca la integral impropia, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
       \end{enumerate}
       \end{indication}
 
 
-\item Compute and dibujar el área comprendida entres las funciones $\sin x$ and $\cos x$ en el intervalo $[0,2\pi]$.
+\item Calcular y dibujar el área comprendida entres las funciones $\sin x$ y $\cos x$ en el intervalo $[0,2\pi]$.
       \begin{indication}
       \begin{enumerate}
-      \item Introducir la función \command{f(x):=sen(x)} in the \field{Input Bar} of the  \field{CAS View} and activate the \field{Graphics View}.
+      \item Introducir la función \command{f(x):=sin(x)} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
       \item Introducir la función \command{g(x):=cos(x)} in the \field{Input Bar}.
-      \item Enter the command \command{Integral(abs(f(x)-g(x)), 0, 2pi)} in the \field{Input Bar} and hacer clic en el botón de \button{Valor numérico}.
+      \item Enter the command \command{Integral(abs(f(x)-g(x)), 0, 2pi)} in the \field{Input Bar} y hacer clic en el botón de \button{Valor numérico}.
       \item Para representar gráficamente el área, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
       \item Otra alternativa es utilizar el comando \command{Integral(Máximo(f(x),g(x)), Mínimo(f(x),g(x)), 0, 2pi)}.
       \end{enumerate}
       \end{indication}
 
 
-\item Representar gráficamente la región del primer cuadrante limitada por la función $f(x)=(x+\sin x)^2$, la recta $x=2\pi$ and el eje $OX$, and hallar el volumen generado en la rotación alrededor del eje $OX$ de la región anterior.
+\item Representar gráficamente la región del primer cuadrante limitada por la función $f(x)=(x+\sin x)^2$, la recta $x=2\pi$ y el eje $OX$, y hallar el volumen generado en la rotación alrededor del eje $OX$ de la región anterior.
       \begin{indication}
       \begin{enumerate}
-      \item Introducir la función \command{f(x):=(x+sen(x))\^{}2} in the \field{Input Bar} of the  \field{CAS View} and activate the \field{Graphics View}.
-      \item Para calcular el área plana Enter the command \command{Integral(f(x), 0, 2pi)} in the \field{Input Bar} and hacer clic en el botón de \button{Valor numérico}.
+      \item Introducir la función \command{f(x):=(x+sin(x))\^{}2} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
+      \item To compute el área plana enter the command \command{Integral(f(x), 0, 2pi)} in the \field{Input Bar} y hacer clic en el botón de \button{Valor numérico}.
       \item Para representar gráficamente el área, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-      \item Para calcular el volumen de revolución Enter the command \command{Integral(pif(x)\^{}2, x, 0, 2pi)}.
+      \item To compute el volumen de revolución enter the command \command{Integral(pif(x)\^{}2, x, 0, 2pi)}.
       \end{enumerate}
       \end{indication}
 
@@ -388,19 +388,19 @@
 
 \section{Ejercicios propuestos}
 \begin{enumerate}[leftmargin=*]
-\item Compute las siguientes integrales:
+\item Calcular las siguientes integrales:
       \begin{enumerate}
       \item $ \int{\dfrac{2x^{3}+2x^{2}+16}{x(x^{2}+4)^{2}}\;dx}$
       \item $ \int{\dfrac{1}{x^{2}\sqrt{4+x^{2}}}\;dx}$
       \end{enumerate}
 
-\item Hallar el área encerrada la parábola $y=9-x^{2}$ and la recta $y=-x$.
+\item Hallar el área encerrada la parábola $y=9-x^{2}$ y la recta $y=-x$.
 
-\item Hallar el área encerrada por la curva $y=e^{-|x|}$ and su asíntota.
+\item Hallar el área encerrada por la curva $y=e^{-|x|}$ y su asíntota.
 
 \item Hallar el volumen generado en la rotación alrededor del eje $OX$ de la región plana limitada por la parábola $y=2x^{2}$, las rectas
-      $x=0$, $x=5$ and el eje $OX$, representando previamente dicha región plana.
+      $x=0$, $x=5$ y el eje $OX$, representando previamente dicha región plana.
 
-\item Hallar el volumen generado en la rotación alrededor del eje $OY$ del área limitada por la parábola $y^{2}=8x$ and la recta $x=2$.
+\item Hallar el volumen generado en la rotación alrededor del eje $OY$ del área limitada por la parábola $y^{2}=8x$ y la recta $x=2$.
 
 \end{enumerate}
