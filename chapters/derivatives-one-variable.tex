@@ -97,7 +97,7 @@
 
 % \subsection{Función derivada y derivadas sucesivas}
 
-% El límite que nos sirve para calcular la derivada de una función en
+% El límite que nos sirve para calcular the derivative of una función en
 % un punto, define una nueva función $f'$ cuyo dominio está formado
 % por los puntos en los que $f$ es diferenciable. La función $f'(x)$,
 % o también $\dfrac{df}{dx}$, se llama \emph{primera derivada} de $f$.
@@ -273,7 +273,7 @@
 % \]
 % en donde, por aligerar la notación, hemos llamado $h$ a lo que en la teoría denominábamos $\Delta x$.
 % 
-% Por lo tanto, para calcular la derivada de la función $f$ en $a=-1$ mediante la definición, procedemos con:
+% Por lo tanto, para calcular the derivative of la función $f$ en $a=-1$ mediante la definición, procedemos con:
 % \[
 % f'(-1) = \mathop {\lim }\limits_{h \to 0} \frac{{f(-1 + h) - f(-1)}}
 % {h}
@@ -291,59 +291,59 @@
 % \end{enumerate}
 
 
-\item Representar gráficamente y estudiar mediante la definición de derivada la derivabilidad de las siguientes funciones en los puntos que se indica:
+\item Plot the graph of the following functions and study its differentiability at the points given using limits.
       \begin{enumerate}
       \item $f(x)=|x-1|$ en $x=1$.
 
             \begin{indication}
             \begin{enumerate}
-            \item Para representarla gráficamente, enter the function \command{f(x):=|x-1|} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
-            \item To compute la derivada de $f$ por la izquierda en $x=1$ enter the command \command{LimitBelow((f(1+h)-f(1))/h, 0)} in the \field{Input Bar}.
-            \item To compute la derivada de $f$ por la derecha en $x=1$ enter the command \command{LimitAbove((f(1+h)-f(1))/h, 0)} in the \field{Input Bar}.
-            \item Como $lim_{x\rightarrow 0^-}\frac{f(1+h)-f(1)}{h}=-1$ es distinto de $lim_{x\rightarrow 0^+}\frac{f(1+h)-f(1)}{h}=1$, la función no es derivable en $x=1$.
+            \item To plot the graph, enter the function \command{f(x):=|x-1|} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
+            \item To compute the derivative of $f$ to the left at $x=1$ enter the command \command{LimitBelow((f(1+h)-f(1))/h, 0)} in the \field{Input Bar}.
+            \item To compute the derivative of $f$ to the right at $x=1$ enter the command \command{LimitAbove((f(1+h)-f(1))/h, 0)} in the \field{Input Bar}.
+            \item Since $lim_{x\rightarrow 0^-}\frac{f(1+h)-f(1)}{h}=-1$ is not equal to $lim_{x\rightarrow 0^+}\frac{f(1+h)-f(1)}{h}=1$, there is no derivative at point $x=1$.
             \end{enumerate}
             \end{indication}
 
       \item $g(x)=\left\{
             \begin{array}{ll}
-            x \sin\dfrac{1}{x}, & \hbox{si $x\neq 0$;} \\
-            0,                  & \hbox{si $x=0$.}     \\
+            x \sin\dfrac{1}{x}, & \hbox{if $x\neq 0$;} \\
+            0,                  & \hbox{if $x=0$.}     \\
             \end{array}
             \right. \quad \textrm{en $x=0$.}$
 
             \begin{indication}
             \begin{enumerate}
-            \item Para representarla gráficamente, enter the function \command{g(x):=If(x!=0, sen(1/x), 0)} in the \field{Input Bar} of the \field{CAS View}.
-            \item To compute la derivada de $g$ por la izquierda en $x=0$ enter the command \command{LimitBelow((g(h)-g(0))/h, 0)} in the \field{Input Bar}.
-            \item To compute la derivada de $g$ por la derecha en $x=0$ enter the command \command{LimitAbove((g(h)-g(0))/h, 0)} in the \field{Input Bar}.
-            \item Como ninguno de los dos límites anteriores existe $g$ no es derivable en $x=0$.
+            \item To plot the graph, enter the function \command{g(x):=If(x!=0, sen(1/x), 0)} in the \field{Input Bar} of the \field{CAS View}.
+            \item To compute the derivative of $g$ to the left at $x=0$ enter the command \command{LimitBelow((g(h)-g(0))/h, 0)} in the \field{Input Bar}.
+            \item To compute the derivative of $g$ to the right $x=0$ enter the command \command{LimitAbove((g(h)-g(0))/h, 0)} in the \field{Input Bar}.
+            \item Since none of these limits exists, $g$ is not differentiable at $x=0$.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
 
-\item  Calcular las derivadas de las siguientes funciones hasta el orden 4 y conjeturar cuál sería el valor de la derivada de orden $n$.
+\item Compute the derivatives of the following function until order 4 and try to infer the formula for the derivative of order $n$ in each case.
       \begin{enumerate}
       \item  $f(x)=a^x\log(a)$.
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la función \command{f(x):=a\^{}xlog(a)} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para la primera derivada enter the expression \command{f'(x)} in the \field{Input Bar}.
-            \item Para la segunda derivada enter the expression \command{f''(x)} in the \field{Input Bar}.
-            \item Para la tercera derivada enter the expression \command{f'''(x)} in the \field{Input Bar}.
-            \item Para la cuarta derivada enter the expression \command{f''''(x)} in the \field{Input Bar}.
-            \item La derivada de orden $n$ será por tanto $f^n(x)=a^x\log(a)^{n+1}$.
+            \item Enter the function \command{f(x):=a\^{}xlog(a)} in the \field{Input Bar} of the \field{CAS View}.
+            \item To compute the first derivative enter the expression \command{f'(x)} in the \field{Input Bar}.
+            \item To compute the second derivative enter the expression \command{f''(x)} in the \field{Input Bar}.
+            \item To compute the third derivative enter the expression \command{f'''(x)} in the \field{Input Bar}.
+            \item To compute the fourth derivative enter the expression \command{f''''(x)} in the \field{Input Bar}.
+            \item Thus, the derivative of order $n$ will be $f^n(x)=a^x\log(a)^{n+1}$.
             \end{enumerate}
             \end{indication}
       \item  $g(x)=\dfrac{\sin x +\cos x}{2}$.
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la función \command{g(x):=(sin(x)+cos(x))/2} in the \field{Input Bar} of the \field{CAS View}.of the \field{CAS View}.
-            \item Para la primera deof the \field{CAS View}.{g'(x)} in the \field{Input Bar}.
-            \item Para la segunda deof the \field{CAS View}.{g''(x)} in the \field{Input Bar}.
-            \item Para la tercera deof the \field{CAS View}.{g'''(x)} in the \field{Input Bar}.
-            \item Para la cuarta derivada enter the expression \command{g''''(x)} in the \field{Input Bar}.
-            \item A partir de aquí las derivadas se repiten, por lo que la derivada de orden $n$ será
+            \item Enter the function \command{g(x):=(sin(x)+cos(x))/2} in the \field{Input Bar} of the \field{CAS View} of the \field{CAS View}.
+            \item To compute the first derivative enter the expression \command{g'(x)} in the \field{Input Bar}.
+            \item To compute the second derivative enter the expression \command{g''(x)} in the \field{Input Bar}.
+            \item To compute the third derivative enter the expression \command{g'''(x)} in the \field{Input Bar}.
+            \item To compute the fourth derivative enter the expression \command{g''''(x)} in the \field{Input Bar}.
+            \item From this order on the derivatives are repeated. Thus, the derivative of order $n$ will be
                   \[
                   f^n(x)=
                   \begin{cases}
@@ -352,89 +352,88 @@
                   \frac{-\sin(x)-\cos(x)}{2} & \mbox{si $x=4k+2$} \\
                   \frac{-\cos(x)+\sin(x)}{2} & \mbox{si $x=4k+3$} \\
                   \end{cases}
-                  \quad \mbox{con $k\in \mathbb{Z}$}
+                  \quad \mbox{with $k\in \mathbb{Z}$}
                   \]
             \end{enumerate}
             \end{indication}
             % \item  $h(x)=\dfrac{1}{\sqrt{1+x}}$.
       \end{enumerate}
 
-\item Calcular las rectas tangente y normal a la gráfica de la función $f(x)=\log(\sqrt{x+1})$ en $x=1$.
-      Dibujar la gráfica de la función y de la recta tangente.
+\item Compute the tangent line to the graph of the function $f(x)=\log(\sqrt{x+1})$ at $x=1$.
+Plot the graph of the function and the tangent line.
       \begin{indication}
       \begin{enumerate}
-      \item Introducir la función \command{f(x):=log(sqrt(x+1))} in the \field{Input Bar} of the \field{CAS View}.
-      \item Para obtener la ecuación de la recta tangente a $f$ en $x=1$ introducir la ecuación $y=f(1)+f'(1)(x-1)$ in the \field{Input Bar}.
-      \item Para dibujar la recta tangente hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-      \item Para obtener la ecuación de la recta normal a $f$ en $x=1$ introducir la ecuación $y=f(1)-1/f'(1)(x-1)$ in the \field{Input Bar}.
-      \item Para dibujar la recta normal hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+      \item Enter the function \command{f(x):=log(sqrt(x+1))} in the \field{Input Bar} of the \field{CAS View}.
+      \item To compute the equation of the tangent line to $f$ at $x=1$ enter the equation \command{y=f(1)+f'(1)(x-1)} in the \field{Input Bar}.
+      \item To plot the tangent line click the circle to the left of the previous expression.
+      \item To compute the equation of the normal line to $f$ at $x=1$ enter the equation \command{y=f(1)-1/f'(1)(x-1)} in the \field{Input Bar}.
+      \item To plot the normal line click the circle to the left of the previous expression.
       \end{enumerate}
       \end{indication}
 
 
-
-\item Given the function
+\item Consider the function
       \[
-      g(x)=\dfrac{2x^{3}-3x}{x^{2}+1}
+      g(x)=\dfrac{2x^{3}-3x}{x^{2}+1}.
       \]
 
       \begin{enumerate}
-      \item Representar la gráfica de $g$.
+      \item Plot the graph of $g$.
             \begin{indication}
-            Para representarla gráficamente, enter the function \command{g(x):=(2x\^{}3-3x)/(x\^{}2+1)} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
+            To plot the graph, enter the function \command{g(x):=(2x\^{}3-3x)/(x\^{}2+1)} in the \field{Input Bar} of the \field{CAS View} and activate the \field{Graphics View}.
             \end{indication}
 
-      \item Calcular la función derivada $g'(x)$ y representar su gráfica.
+      \item Compute the first derivative of $g$ an plot its graph.
             \begin{indication}
             \begin{enumerate}
-            \item Para obtener la derivada de $g$ enter the expression \command{g'(x):=Derivada(g)} in the \field{Input Bar}.
-            \item Para dibujar la gráfica de $g'$ hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+            \item To compute the the derivative of $g$ enter the expression \command{g'(x):=Derivative(g)} in the \field{Input Bar}.
+            \item To plot the graph of $g'$ click the circle to the left of the previous expression.
             \end{enumerate}
             \end{indication}
 
-      \item Calcular las raíces de $g'(x).$
+      \item Compute the critical points of $g$.
             \begin{indication}
             \begin{enumerate}
-            \item To compute las raíces de $g'$ enter the expression \command{Root(g'(x))} in the \field{Input Bar} y hacer clic sobre el botón de evaluación aproximada.
-            \item $g'$ tiene dos raíces en $x=-0.56$ y $x=0.56$ aproximadamente.
+            \item To compute the zeros of $g'$ enter the expression \command{Root(g'(x))} in the \field{Input Bar} and click the button \button{Numeric Evaluation}.
+            \item $g$ has two critical points at $x=-0.56$ and $x=0.56$ approximately.
             \end{enumerate}
             \end{indication}
 
-      \item  A la vista de las raíces y de la gráfica de la función derivada, determinar los extremos relativos de la función y los intervalos de crecimiento.
+      \item Study the growth of $g$ and determine its relative extrema.
             \begin{indication}
             \begin{enumerate}
-            \item $g'(x)>0$ para $x\in (-\infty, -0.56)$, luego $g$ es creciente en ese intervalo.
-            \item $g'(x)<0$ para $x\in (-0.56, 0.56)$, luego $g$ es decreciente en ese intervalo.
-            \item $g'(x)>0$ para $x\in (-0.56, \infty)$, luego $g$ es creciente en ese intervalo.
-            \item $g$ tiene un máximo en $x=-0.56$ ya que $g'$ se anula en este punto y a la izquierda la función es creciente y a la derecha decreciente.
-            \item $g$ tiene un mínimo en $x=0.56$ ya que $g'$ se anula en este punto y a la izquierda la función es decreciente y a la derecha creciente.
+            \item $g'(x)>0$ for $x\in (-\infty, -0.56)$, so $g$ increases in that interval.
+            \item $g'(x)<0$ for $x\in (-0.56, 0.56)$, so $g$ decreases in that interval.
+            \item $g'(x)>0$ for $x\in (-0.56, \infty)$, so $g$ increases in that interval.
+            \item $g$ has a maximum at $x=-0.56$ since $g'$ vanishes at that point and is positive to the left and negative to the right of this point.
+            \item $g$ has a minimum at $x=0.56$ since $g'$ vanishes at that point and is negative to the left and positive to the right of this point.
             \end{enumerate}
             \end{indication}
 
-      \item Calcular la segunda derivada $g''(x)$ y representar su gráfica.
+      \item Compute the second derivative of $g$ an plot its graph.
             \begin{indication}
             \begin{enumerate}
-            \item Para obtener la segunda derivada de $g$ enter the expression \command{g''(x):=Derivada(g, 2)} in the \field{Input Bar}.
-            \item Para dibujar la gráfica de $g''$ hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+            \item To compute the second derivative of $g$ enter the expression \command{g''(x):=Derivative(g, 2)} in the \field{Input Bar}.
+            \item To plot the graph of $g''$ click the circle to the left of the previous expression.
             \end{enumerate}
             \end{indication}
 
-      \item Calcular las raíces de $g''(x).$
+      \item Compute the zeros of the second derivate of $g$.
             \begin{indication}
             \begin{enumerate}
-            \item To compute las raíces de $g''$ enter the expression \command{Root(g''(x))} in the \field{Input Bar} y hacer clic sobre el botón de evaluación aproximada.
-            \item $g''$ tiene tres raíces en $x=-\sqrt{3}$, $x=0$ y $x=\sqrt{3}$.
+            \item To compute the zeros of $g''$ enter the expression \command{Root(g''(x))} in the \field{Input Bar} and click the button \button{Numeric Evaluation}.
+            \item $g''$ has zeros at $x=-\sqrt{3}$, $x=0$ and $x=\sqrt{3}$.
             \end{enumerate}
             \end{indication}
 
-      \item A la vista de las raíces y de la gráfica de la segunda derivada, determinar los intervalos de concavidad de la función y los puntos de inflexión.
+      \item Study the concavity of $g$ and determine its inflection points.
             \begin{indication}
             \begin{enumerate}
-            \item $g''(x)>0$ para $x\in (-\infty, -\sqrt{3})$, luego $g$ es cóncava en ese intervalo.
-            \item $g''(x)<0$ para $x\in (-\sqrt{3}, 0)$, luego $g$ es convexa en ese intervalo.
-            \item $g''(x)>0$ para $x\in (0, \sqrt{3})$, luego $g$ es cóncava en ese intervalo.
-            \item $g''(x)<0$ para $x\in (\sqrt{3}, \infty)$, luego $g$ es convexa en ese intervalo.
-            \item $g$ tiene puntos de inflexión en $x=-\sqrt{3}$, $x=0$ y $x=\sqrt{3}$ pues $g''$ se anula en estos puntos y la concavidad a la izquierda y derecha de ellos cambia.
+            \item $g''(x)>0$ for $x\in (-\infty, -\sqrt{3})$, so $g$ is concave in that interval.
+            \item $g''(x)<0$ for $x\in (-\sqrt{3}, 0)$, so $g$ is convex in that interval.
+            \item $g''(x)>0$ for $x\in (0, \sqrt{3})$, so $g$ is concave in that interval.
+            \item $g''(x)<0$ for $x\in (\sqrt{3}, \infty)$, so $g$ is convex in that interval.
+            \item $g$ has inflections points at $x=-\sqrt{3}$, $x=0$ and $x=\sqrt{3}$ since $g''$ vanishes at those points and the sign of the second derivate to the left and to the right of them is different.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
@@ -442,32 +441,32 @@
 \end{enumerate}
 
 
-\section{Ejercicios propuestos}
+\section{Proposed exercises}
 \begin{enumerate}[leftmargin=*]
-\item  Probar que no es derivable en $x=0$ la siguiente función:
-      \[ f(x)=\left\{
-      \begin{array}{ccl}
-      e^x-1 &  & \mbox{si } x\geq 0, \\
-      x^3   &  & \mbox{si } x<0.
-      \end{array}\right.
-      \]
+\item Prove that the following function is not differentiable at $x=0$.
+\[
+f(x)=
+\begin{cases}
+e^x-1 & \mbox{if $x\geq 0$};  \\
+x^3 & \mbox{if $x<0$}.
+\end{cases}
+\]
 
-\item  Para cada una de las siguientes curvas, hallar las ecuaciones de las rectas tangente y normal en el punto $x_{0}$ indicado.
-      \begin{enumerate}
-      \item  $y=x^{\sin x},\quad x_{0}=\pi/2$.
-      \item  $y=(3-x^2)^4\sqrt[3]{5x-4},\quad x_{0}=1$.
-      \item  $y=\log \sqrt{\dfrac{1+x}{1-x}}+\arctan x, \quad x_{0}=0$.
-      \end{enumerate}
+\item For each of the following functions compute the equation of the tangent and normal lines at the points given.
+\begin{enumerate}
+\item  $y=x^{\sin x},\quad x_{0}=\pi/2$.
+\item  $y=(3-x^2)^4\sqrt[3]{5x-4},\quad x_{0}=1$.
+\item  $y=\log \sqrt{\dfrac{1+x}{1-x}}+\arctan x, \quad x_{0}=0$.
+\end{enumerate}
 
-\item Estudiar el crecimiento, decrecimiento, extremos relativos, concavidad y puntos de inflexión de la función $f(x)=\dfrac{x}{x^2-2}$.
+\item Study the increase, decrease, relative extrema, concavity and inflection points of the function $f(x)=\dfrac{x}{x^2-2}$.
 
-\item Se ha diseñado un envoltorio cilíndrico para cápsulas.
-      Si el contenido de las cápsulas debe ser de $0.15$ ml, hallar las dimensiones del cilindro para que el material empleado en el envoltorio
-      sea mínimo.
+\item A drug has to be given to patients in cylindrical pills.
+The content of the drug in each pill is 0.15 ml; determine the dimensions of the cylinder so that the amount of material used to make it (the pill) is minimal.
 
-\item La cantidad de trigo en una cosecha $C$ depende de la cantidad de nitrógeno en el suelo $n$ según la ecuación
-      \[
-      C(n) = \frac{n}{1+n^2}, \quad n\geq0
-      \]
-      ¿Para qué cantidad de nitrógeno se obtendrá la mayor cosecha de trigo?
+\item The wheat yield $C$ of a field depends on the level of nitrogen on the ground $n$, and it is given by the following relation:
+\[
+C(n) = \frac{n}{1+n^2},\quad n\geq 0.
+\]
+Find the level of nitrogen that will produce the biggest yield.
 \end{enumerate}
