@@ -1,5 +1,6 @@
+% !TEX root = ../geogebra-practices.tex
 % Author: Alfredo Sánchez Alberca (asalber@ceu.es)
-\chapter{Ecuaciones Diferenciales Ordinarias}
+\chapter{Ordinary differential equations}
 
 % \section{Fundamentos teóricos}
 
@@ -57,14 +58,14 @@
 % general, se tiene $f(0)=ce^0=1$, de donde se deduce que $c=1$, y por tanto la solución particular sería $f(x)=e^x$.
 
 % Geométricamente, la solución general de una ecuación diferencial de primer orden representa una familia de curvas,
-% denominadas \emph{curvas integrales}, una para cada valor concreto asignado a la constante arbitraria. 
-% En la figura~\ref{g:curvas integrales} se muestran las curvas integrales de la ecuación diferencial $y'=y$.
+% denominadas \emph{curvas integrals}, una para cada valor concreto asignado a la constante arbitraria. 
+% En la figura~\ref{g:curvas integrals} se muestran las curvas integrals de la ecuación diferencial $y'=y$.
 
 % \begin{figure}[h!]
 % \begin{center}
-% \scalebox{1}{\input{img/ecuaciones_diferenciales/curvas_integrales}}
-% \caption{Familia de curvas integrales que son solución de la ecuación $y'=y$.}
-% \label{g:curvas integrales}
+% \scalebox{1}{\input{img/ecuaciones_diferenciales/curvas_integrals}}
+% \caption{Familia de curvas integrals que son solución de la ecuación $y'=y$.}
+% \label{g:curvas integrals}
 % \end{center}
 % \end{figure}
 
@@ -133,105 +134,106 @@
 
 % \newpage
 
-\section{Ejercicios resueltos}
+\section{Solved exercises}
 
 \begin{enumerate}[leftmargin=*]
-\item Resolver las siguientes ecuaciones diferenciales de variables separables y dibujar sus curvas integrales para distintos valores de la constante de integración:
+\item Solve the following separable differential equations and plot their integral curves for different values of the integration constant.
       \begin{enumerate}
       \item $xdy=ydx$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(y'=y/x)} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-            \item Para hacer variar la constante de integración y obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} y mover el deslizador correspondiente a la constante.
+            \item Enter the command \command{SolveODE(y'=y/x)} in the \field{Input Bar} of the \field{CAS View}.
+            \item To plot the solution of the differential equation, click the circle to the left of the previous expression.
+            \item To change the value of the integration constant and get different particular solutions open the \field{Algebra View} and move the slider of the constant.
             \end{enumerate}
             \end{indication}
 
       \item $-2x(1+e^y)+e^y(1+x^{2})y'=0$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(-2x(1+e\^{}y)+e\^{}y(1+x\^{}2)y'=0)} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-            \item Para hacer variar la constante de integración y obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} y mover el deslizador correspondiente a la constante.
+            \item Enter the command \command{SolveODE(-2x(1+e\^{}y)+e\^{}y(1+x\^{}2)y'=0)} in the \field{Input Bar} of the \field{CAS View}.
+            \item To plot the solution of the differential equation, click the circle to the left of the previous expression.
+            \item To change the value of the integration constant and get different particular solutions open the \field{Algebra View} and move the slider of the constant.
             \end{enumerate}
             \end{indication}
 
       \item $y-xy'=1+x^2y'$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(y-x*y'=1+x\^{}2*y')} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
-            \item Para hacer variar la constante de integración y obtener diferentes soluciones particulares abrir la \field{Vista de Álgebra} y mover el deslizador correspondiente a la constante.
+            \item Enter the command \command{SolveODE(y-x*y'=1+x\^{}2*y')} in the \field{Input Bar} of the \field{CAS View}.
+            \item To plot the solution of the differential equation, click the circle to the left of the previous expression.
+            \item To change the value of the integration constant and get different particular solutions open the \field{Algebra View} and move the slider of the constant.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
 
-\item Resolver y representar gráficamente las siguientes ecuaciones diferenciales con las condiciones iniciales dadas.
+\item Solve the following differential equations with the initial conditions given and plot the solution.
       \begin{enumerate}
-      \item $xdy=ydx$, con la condición inicial $y(1)=2$.
+      \item $xdy=ydx$, with the initial condition $y(1)=2$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(y'=y/x, (1,2))} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+            \item Enter the command \command{SolveODE(y'=y/x, (1,2))} in the \field{Input Bar} of the \field{CAS View}.
+            \item To plot the solution of the differential equation, click the circle to the left of the previous expression.
             \end{enumerate}
             \end{indication}
 
-      \item $x\sqrt{1-y^2}+y\sqrt{1-x^2} y'=0$, con la condición inicial $y(0)=1$.
+      \item $x\sqrt{1-y^2}+y\sqrt{1-x^2} y'=0$, with the initial condition $y(0)=1$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(xsqrt(1-y\^{}2)+ysqrt(1-x\^{}2)y'=0, (0,1))} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+            \item Enter the command \command{SolveODE(x*sqrt(1-y\^{}2)+y*sqrt(1-x\^{}2)y'=0, (0,1))} in the \field{Input Bar} of the \field{CAS View}.
+            \item To plot the solution of the differential equation, click the circle to the left of the previous expression.
             \end{enumerate}
             \end{indication}
 
-      \item $s'+s\cos t=\sin t\cos t$ con la condición inicial $s(0)=1$.
+      \item $s'+s\cos t=\sin t\cos t$ with the initial condition $s(0)=1$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO(s'+s*cos(t)=sen(t)cos(t), s, t, (0,1))} in the \field{Input Bar} of the \field{CAS View}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+            \item Enter the command \command{SolveODE(s'+s*cos(t)=sen(t)cos(t), s, t, (0,1))} in the \field{Input Bar} of the \field{CAS View}.
+            \item To plot the solution of the differential equation, click the circle to the left of the previous expression.
             \end{enumerate}
             \end{indication}
 
-      \item $(1+e^x)yy'=e^y$, con la condición inicial $y(0)=0$.
+      \item $(1+e^x)yy'=e^y$, with the initial condition $y(0)=0$.
             \begin{indication}
             \begin{enumerate}
-            \item Enter the command \command{ResuelveEDO((1+e\^{}x)yy'=e\^{}y, (0,0))} in the \field{Input Bar} of the \field{CAS View}.
-            \item En este caso, Geogegra no es capaz de encontrar la solución particular de esta ecuación, pero podemos intentar resolverla separando las variables e integrando.
-            \item Tras separar las variables se tiene la igualdad $\frac{y}{e^y}dy = \frac{1}{1+e^x}dx$, de manera que sólo hay que integrar a cada lado.
-                  Para ello enter the command \command{Integral(y/e\^{}y) - Integral(1/(1+e\^{}x))} in the \field{Input Bar}.
-            \item En la solución aparecen dos constantes $c_1$ y $c_2$, pero realmente se puede eliminar una pasándola al otro lado.
-                  Para ello enter the command \command{Sustituye(\$, c\_{}2=0)} in the \field{Input Bar}.
-            \item Para imponer la condición inicial enter the command \command{Sustituye(\$, x=0, y=0)} in the \field{Input Bar}.
-            \item Para dibujar la solución de la ecuación diferencial, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+            \item Enter the command \command{SolveODE((1+e\^{}x)yy'=e\^{}y, (0,0))} in the \field{Input Bar} of the \field{CAS View}.
+            \item In this case, Geogegra is not able to solve the equation but you can try to solve the equation separating the variables and integrating.
+            \item After separating the variables you get the equation $\frac{y}{e^y}dy = \frac{1}{1+e^x}dx$.
+                  To compute the integrals of both sides enter \command{Integral(y/e\^{}y) = Integral(1/(1+e\^{}x))} in the \field{Input Bar}.
+            \item In the solution there are two constants $c_1$ and $c_2$, but it is possible to remove one of them passing it to the other side. For it, enter the command \command{Substitute(\$, c\_{}1=c, c\_{}2=0)} in the \field{Input Bar}.
+            \item To impose the initial condition, enter the command \command{Substitute(\$, x=0, y=0)} in the \field{Input Bar}.
+            \item To get the value of the constant, enter the command \command{Solve(\$)} in the \field{Input Bar}.
+            \item To replace the value of the constant in the particular solution, enter the command \command{Substitute(\$n, \$)} in the \field{Input Bar}, where n \command{n} is the number of the line that contains the particular solution of the equation.
+            \item Finally, to plot the solution of the differential equation, click the circle to the left of the previous expression.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
 
-\item El azúcar se disuelve en el agua con una velocidad proporcional a la cantidad que queda por disolver.
-      Si inicialmente había $13.6$ kg de azúcar y al cabo de $4$ horas quedan sin disolver $4.5$ kg, ¿cuánto tardará en disolverse el $95\%$ del
-      azúcar contando desde el instante inicial?
+\item The speed at which sugar dissolves into water is proportional to the amount of sugar left without dissolving.
+      Suppose we have $13.6$ kg of sugar tat we want to mix with water, and after 4 hours there are 4.5 kg without dissolving.
+      How long will it take, from the beginning of the process, for the 95\% of the sugar to be dissolved?
       \begin{indication}
       \begin{enumerate}
-      \item La ecuación diferencial que explica la disolución del azúcar es $a'=ka$, donde $a$ es la cantidad de azúcar que queda por disolver, $t$ es el tiempo y $k$ es la constante de disolución del azúcar.
-      \item Para resolver la ecuación diferencial enter the command \command{ResuelveEDO(a'=k*a, a, t, (0, 13.6)} in the \field{Input Bar} of the \field{CAS View}.
-      \item Para imponer la segunda condición inicial enter the command \command{Sustituye(\$, t=4, a=4.5)} in the \field{Input Bar}.
-      \item Para obtener el valor de la constante de disolución enter the command \command{Resuelve(\$)} in the \field{Input Bar}.
-      \item Para sustituir el valor de la constante de disolución en la solución particular enter the command  \command{Sustituye(\$$n$,\$)} in the \field{Input Bar}, donde $n$ es el identificador de la expresión que contienen la solución de la ecuación diferencial.
-      \item El azúcar que quedará sin disolver tras disolverse el 95\% de la cantidad inicial es el 5\% de esta cantidad.
-            Para sustituir esta cantidad de azúcar en la solución de la ecuación diferencial enter the command \command{Sustituye(\$,13.6*0.05)} in the \field{Input Bar}.
-      \item Finalmente, para obtener la predicción del tiempo enter the command  \command{Resuelve(\$)} in the \field{Input Bar}.
+      \item The differential equation that explains the dissolution of sugar into water is $y'=ky$, where $y$ is the amount of sugar, $t$ is time and $k$ is the dissolution constant of sugar.
+      \item To solve the differential equation enter the command \command{SolveODE(a'=k*a, a, t, (0, 13.6)} in the \field{Input Bar} of the \field{CAS View}.
+      \item To impose the second initial condition enter the command \command{Substitute(\$, t=4, a=4.5)} in the \field{Input Bar}.
+      \item To get the value of the dissolution constant enter the command \command{Solve(\$)} in the \field{Input Bar}.
+      \item To replace the value of the dissolution constant in the particular solution enter the command  \command{Substitute(\$$n$,\$)} in the \field{Input Bar}, whee $n$ is the identifier of the line that contains the particular solution of the differential equation.
+      \item The amount of sugar whithout dissolving after 95\% of the sugar is dissolved  is 5\% of the initial amount.
+            To replace that amount in the particular solution of the differential equation enter the command \command{Sustituye(\$,13.6*0.05)} in the \field{Input Bar}.
+      \item Finally, to get the time required enter the command \command{Solve(\$)} in the \field{Input Bar}.
       \end{enumerate}
       \end{indication}
 
 \end{enumerate}
 
 
-\section{Ejercicios propuestos}
+\section{Proposed exercises}
 \begin{enumerate}[leftmargin=*]
 
-\item Resolver las siguientes ecuaciones diferenciales:
+\item Solve the following differential equations:
       \begin{enumerate}
       \item $(1+y^{2})+xyy'=0$.
       \item $xy'-4y+2x^2+4=0$.
@@ -240,20 +242,22 @@
       \item $(x^2+y^2+x)+xydy=0$.
       \end{enumerate}
 
-\item Hallar las curvas tales que en cada punto $(x,y)$ la pendiente de la recta tangente sea igual al cubo de la
-      abscisa en dicho punto.
-      ¿Cuál de estas curvas pasa por el origen?
+\item Compute the curves $(x,y)$ such that the slope of the tangent line is equal to the value of $x$ at any point.
+      Which of these curves passes through the origin of coordinates?
 
-\item Al introducir glucosa por vía intravenosa a velocidad constante, el cambio de concentración global de glucosa con
-      respecto al tiempo $c(t)$ se explica mediante la siguiente ecuación diferencial
+\item If a person receives glucose by an intravenous drip, the concentration of glucose $c(t)$ with respect to time follows this differential equation:
       \[
-      \frac{dc}{dt}=\frac{G}{100V}-kc,
+      \frac{dc}{dt}=\frac{G}{100V}-kc.
       \]
-      donde $G$ es la velocidad constante a la que se suministra la glucosa, $V$ es el volumen total de la sangre en el cuerpo y $k$ es una constante positiva que depende del paciente. Se pide calcular $c(t)$.
+      Here $G$ is the (constant) speed at which glucose is given to the patient, $V$ is the total volume of blood in the body, and $k$ is a positive constant that varies with each patient.
+      Compute $c(t)$.
 
-\item En una reacción química, un cierto compuesto se transforma en otra sustancia a un ritmo proporcional a la cantidad
-      no transformada.
-      Si había inicialmente 100 gr de sustancia original y 60 gr tras una hora, ¿cuanto tiempo pasará hasta
-      que se haya transformado el 80\% del compuesto?
+\item A water tank of 50l contains 10 l of water.
+      Suppose we start pouring into the tank a solution of water with 100 g of salt per liter, at a rate of 4 l per minute.
+      We also stir the water tank, to keep a uniform distribution of salt, and, at the same time, we release water (with salt) at a rate of 2 l per minute.
+      How long will it take to the tank to be full?
+      How much salt will there be in the tank in that moment?
+
+      \noindent\textbf{Remark:} The variation rate of salt in the tank is equal to the difference between the amount of salt that comes into the tank and the amount of salt that is taken from the tank.
 \end{enumerate}
 

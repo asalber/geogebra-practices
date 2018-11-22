@@ -1,5 +1,6 @@
+% !TEX root = ../geogebra-practices.tex
 % Author: Alfredo Sánchez Alberca (asalber@ceu.es)
-\chapter{Derivadas de funciones de varias variables}
+\chapter{Several variables differentiable calculus}
 
 % \section{Fundamentos teóricos}
 % El concepto de derivada es uno de los más importantes del Cálculo
@@ -7,7 +8,7 @@
 % multitud de aplicaciones. En esta práctica introducimos este
 % concepto de derivada parcial en funciones de varias variables y presentamos algunas de sus aplicaciones.
 
-% \subsection{Derivadas parciales de una función de $n$ variables}
+% \subsection{partial derivatives de una función de $n$ variables}
 % Recordemos que the derivative of una función de una única variable en
 % un punto $x=a$ se define como la tasa de variación instantánea de la
 % función en dicho punto. Si llamamos $h$ al incremento en la
@@ -34,9 +35,9 @@
 
 % De igual forma, si tenemos una función de $n$ variables
 % $f(\vec{x})=f(x_1,x_2,...,x_n)$, se pueden definir esas mismas tasas
-% de variación instantáneas con respecto a cada una de las variables
+% de variación instantáneas with respect to cada una de las variables
 % en un punto $\vec{a}=(a_1,a_2,...,a_n)$, para obtener las
-% \emph{Derivadas Parciales} de la función con respecto a cada una de
+% \emph{partial derivatives} de la función with respect to cada una de
 % las variables en el punto $\vec{x}=\vec{a}$, que se notarán como
 % $f_{x_i}(\vec{a})$, o bien por $\dfrac{\partial f}{\partial
 % x_i}(\vec{a})$:
@@ -47,7 +48,7 @@
 % 0}\frac{f(a_1,\ldots,a_i+h,\ldots,a_n)-f(a_1,\ldots,a_i,\ldots,a_n)}{h},
 % \]
 
-% Y la \emph{Función Derivada Parcial} con respecto a cualquiera de
+% Y la \emph{Función Derivada Parcial} with respect to cualquiera de
 % las variables $x_i$, para todos los $\vec{x}$ de un conjunto, que se
 % notará como $f_{x_i}$, o $\dfrac{\partial f}{\partial x_i}$:
 
@@ -56,19 +57,19 @@
 % 0}\frac{f(x_1,\ldots,x_i+h,\ldots,x_n)-f(x_1,\ldots,x_i,\ldots,x_n)}{h},
 % \]
 
-% Lo cual, a efectos de cálculo, se resume en que la derivada parcial
+% Lo cual, a efectos de cálculo, se resume en que the partial derivative
 % de una función de varias variables se obtiene como la derivada de
-% una función de una única variable, que es aquella con respecto a la
+% una función de una única variable, que es aquella with respect to la
 % que se deriva, y constantes el resto. Como consecuencia, las reglas
 % de derivación también se aplican en el cálculo de las derivadas
 % parciales de este tipo de funciones, sin más que considerar
-% constantes todas las variables con respecto a las que no estamos
+% constantes todas las variables with respect to las que no estamos
 % derivando.
 
 % Si para las funciones de una variable la derivada en un punto $a$
 % tiene una interpretación gráfica sencilla como la pendiente de la
 % recta tangente a la gráfica de la función en el punto $(a,f(a))$,
-% también para funciones de dos variables la derivada parcial con
+% también para funciones de dos variables the partial derivative con
 % respecto a $x$ en el punto $\vec{a}=(x_0,y_0)$:
 
 % \[
@@ -79,7 +80,7 @@
 % obtiene al cortar la gráfica de la función en el punto
 % $(x_0,y_0,z_0=f(x_0,y_0))$ mediante el plano en el que $y$ permanece
 % constante e igual a $y_0$, y tan sólo varía el valor de $x$. E
-% igualmente, la derivada parcial con respecto a $y$ será la pendiente
+% igualmente, the partial derivative with respect to $y$ será la pendiente
 % de la recta tangente a la curva que se obtiene al cortar la gráfica
 % de la función en $(x_0,y_0,z_0=f(x_0,y_0))$ mediante el plano
 % $x=x_0$.
@@ -87,7 +88,7 @@
 % \begin{figure}[h!]
 % \begin{center}
 % \includegraphics[scale=0.4]{img/derivadas_varias_variables/tangentesuperficie}
-% \caption{La derivada parcial de una función $f(x,y)$ con respecto a
+% \caption{the partial derivative de una función $f(x,y)$ with respect to
 % $x$ en el punto $(x_0,y_0)$, como la pendiente de la recta tangente
 % a la curva descrita por la intersección de la superficie de $f$ y el
 % plano de ecuación $y=y_0$.}
@@ -95,20 +96,20 @@
 % \end{figure}
 
 
-% \subsection{Derivadas parciales sucesivas de una función de $n$
+% \subsection{partial derivatives sucesivas de una función de $n$
 % variables}
 
 % De la misma forma que en las funciones de una variable, mediante los
 % límites que las definen, siempre y cuando existan, obtenemos las
 % segundas, terceras y derivadas de cualquier orden. Es decir, si $f$
 % es una función real de $n$ variables, con sus correspondientes
-% derivadas parciales, a su vez también las mismas son funciones de
+% partial derivatives, a su vez también las mismas son funciones de
 % $n$ variables que, en determinadas condiciones, podrán derivarse de
-% nuevo con respecto a sus $n$ variables para obtener derivadas
+% nuevo with respect to sus $n$ variables para obtener derivadas
 % parciales segundas, y así sucesivamente hasta órdenes superiores de
 % derivación.
 
-% Para la derivada parcial de segundo orden se utiliza la notación
+% Para the second order partial derivative se utiliza la notación
 % $f_{x_ix_j}$ ó $\dfrac{{\partial ^2 f}} {{\partial x_j \partial x_i
 % }}$:
 
@@ -119,7 +120,7 @@
 % {{\partial x_i }}} \right)
 % \]
 
-% Por ejemplo, para una función de dos variables $f(x,y)$, tenemos dos derivadas parciales de primer orden, que siguen
+% Por ejemplo, para una función de dos variables $f(x,y)$, tenemos dos partial derivatives de primer orden, que siguen
 % siendo funciones de las variables $x$ e $y$:
 % \[
 % \frac{\partial f}{\partial x}(x,y)\qquad \frac{\partial f}{\partial y}(x,y) 
@@ -141,13 +142,13 @@
 % La primera y la última reciben el nombre de derivadas segundas, mientras que la segunda y tercera se denominan derivadas
 % cruzadas.
 
-% Si procedemos con las derivadas parciales de tercer orden tendríamos ocho diferentes, y el número es más amplio con
+% Si procedemos con las partial derivatives de tercer orden tendríamos ocho diferentes, y el número es más amplio con
 % funciones de tres o más variables.
 % No obstante, el teorema conocido con \emph{Teorema de Schwartz de las Derivadas Cruzadas} reduce el número de derivadas
 % parciales diferentes:
 
 % \begin{teorema}[Schwartz]
-% Si $f$ es una función de $n$ variables con derivadas parciales segundas cruzadas continuas en un conjunto abierto que
+% Si $f$ es una función de $n$ variables con partial derivatives segundas cruzadas continuas en un conjunto abierto que
 % contiene al punto $a$, entonces en dicho punto se cumple
 % \[
 % \frac{\partial ^2 f}{\partial x_i \partial x_j } = \frac{\partial ^2 f}{\partial x_j \partial x_i }
@@ -159,11 +160,11 @@
 % número de veces que se deriva respecto a cada variable, pero no el orden de la derivación.
 
 % \subsection{Vector gradiente y matriz hessiana}
-% A partir de las derivadas parciales de primer orden de un campo escalar, podemos definir el siguiente vector:
+% A partir de las partial derivatives de primer orden de un campo escalar, podemos definir el siguiente vector:
 
 % \begin{definicion}[Vector gradiente]
 % Dado un campo escalar $f(x_1,\ldots,x_n)$, se llama \emph{gradiente} de $f$, y se escribe $\nabla f$, a la función que a
-% cada punto $a=(a_1,\ldots,a_n)$ le asigna el vector cuyas coordenadas cartesianas son las derivadas parciales de $f$ en
+% cada punto $a=(a_1,\ldots,a_n)$ le asigna el vector cuyas coordenadas cartesianas son las partial derivatives de $f$ en
 % $a$,
 % \[
 % \nabla f(a)=\left(\frac{\partial f}{\partial x_1}(a),\ldots,\frac{\partial f}{\partial x_n}(a)\right).
@@ -174,10 +175,10 @@
 % función en ese punto, por lo que $\nabla f(a)$ indica la dirección de máximo crecimiento de $f$ en el punto $a$,
 % mientras que $-\nabla f(a)$ indica la dirección de máximo decrecimiento.
 
-% Y a partir de las derivadas parciales de segundo orden, podemos definir la siguiente matriz:
+% Y a partir de las partial derivatives de segundo orden, podemos definir la siguiente matriz:
 
 % \begin{definicion}[Matriz hessiana]
-% Dada una función de varias variables $f(x_1,\ldots,x_n)$, para la que existen todas sus derivadas parciales de segundo
+% Dada una función de varias variables $f(x_1,\ldots,x_n)$, para la que existen todas sus partial derivatives de segundo
 % orden en un punto $a=(a_1,\ldots,a_n)$, se define la \emph{matriz hessiana} de $f$ en $a$, y se nota $\nabla^2f(a)$, como la
 % matriz cuadrada cuyos elementos son
 % \[
@@ -202,11 +203,11 @@
 % Al determinante de esta matriz se le llama \emph{hessiano} de $f$ en $a$, y se nota $Hf(a)=|\nabla^2f(a)|$.
 % \end{definicion}
 
-% Entre las utilidades de la matriz Hessiana y el hessiano está la determinación de los extremos relativos y los puntos de
+% Entre las utilidades de the Hessian matrix y el hessiano está la determinación de los extremos relativos y los puntos de
 % silla de una función. 
 
 % \subsection{Derivada direccional}
-% Ya se ha visto que la derivadas parciales miden la tasa de variación instantánea de la función con respecto a cada uno
+% Ya se ha visto que la partial derivatives miden la tasa de variación instantánea de la función with respect to cada uno
 % de sus variables, es decir, en la dirección de cada uno de los ejes de coordenadas. 
 % Pero, \emph {¿qué pasa si nos movemos en cualquier otra dirección?}
 % La tasa de variación instantánea de $f$ en un punto $a$ en la dirección de un vector unitario cualquiera $u$ se conoce
@@ -223,7 +224,7 @@
 % \[
 % f'_{\mathbf{u}}(a) =\nabla f(a)\cdot \mathbf{u}.
 % \]
-% Obsérvese que las derivadas parciales son las derivadas direccionales en las direcciones de los vectores coordenados.
+% Obsérvese que las partial derivatives son las derivadas direccionales en las direcciones de los vectores coordenados.
 
 % \subsection{Derivación implícita}
 % Si se sabe que la ecuación 
@@ -288,9 +289,9 @@
 
 % \newpage
 
-\section{Ejercicios resueltos}
+\section{Solved exercises}
 \begin{enumerate}[leftmargin=*]
-\item Calcular la recta tangente y el plano normal a la trayectoria
+\item Compute the tangent line and the normal plane to the trajectory of
       \[
       f(t)=
       \begin{cases}
@@ -300,27 +301,26 @@
       \end{cases}
       \quad t\in \mathbb{R};
       \]
-      en el instante $t=\pi$ y dibujarlos.
+      at the time $t=\pi$ and plot them.
 
       \begin{indication}
       \begin{enumerate}
-      \item Enter the command \command{f(t):=(sen(t),cos(t),sqrt(t))} in the \field{Input Bar} of the \field{CAS View} y activar a \field{Vista Gráficas 3D}.
-      \item Para dibujar el punto de tangencia en la trayectoria, enter the command \command{f(pi)} in the \field{Input Bar} y hacer clic en el círculo que aparece a la izquierda de esta expresión.
-      \item To compute y dibujar la recta tangente a la trayectoria, enter the command \command{g(t):=f(pi)+f'(pi)t} in the \field{Input Bar}.
-      \item To compute el plano normal a la trayectoria, enter the command \command{((x,y,z)-f(pi))f'(pi)=0} in the \field{Input Bar}.
-      \item Para dibujar el plano normal a la trayectoria, hacer clic en el círculo que aparece a la izquierda de la expresión anterior.
+      \item Enter the command \command{f(t):=(sin(t),cos(t),sqrt(t))} in the \field{Input Bar} of the \field{CAS View} and activate the \field{3D Graphics View}.
+      \item To plot the point of tangency in the trajectory, enter the command \command{f(pi)} in the \field{Input Bar} and click the circle to the left of this expression.
+      \item To compute and plot the tangent line to the trajectory, enter the command \command{g(t):=f(pi)+f'(pi)t} in the \field{Input Bar}.
+      \item To compute the normal plane to the trajectory, enter the command \command{((x,y,z)-f(pi))f'(pi)=0} in the \field{Input Bar}.
+      \item To plot the normal plane to the trajectory, click the circle to the left of the previous expression.
       \end{enumerate}
       \end{indication}
 
-\item Given the function $f(x,y)=y^2-x^2$, se pide:
+\item Given the function $f(x,y)=y^2-x^2$,
       \begin{enumerate}
-      \item Dibujar su gráfica y el punto $(1,2,f(1,2))$.
+      \item Plot its graph and the point $(1,2,f(1,2))$.
             \begin{indication}
             \begin{enumerate}
-            \item Introducir el la función \command{f(x,y):=y\^{}2-x\^{}2} in the \field{Input Bar} of the \field{CAS View} y activar la \field{Vista Gráficas 3D}.
-            \item Introducir el punto \command{(1,2,f(1,2))} in the \field{Input Bar} y hacer clic en el círculo que aparece a la izquierda de esta expresión.
+            \item Enter the function \command{f(x,y):=y\^{}2-x\^{}2} in the \field{Input Bar} of the \field{CAS View} and activate the \field{3D Graphics View}.
+            \item Enter the point \command{(1,2,f(1,2))} in the \field{Input Bar} and click the circle to the left of this expression.
             \end{enumerate}
-
             \end{indication}
 
             % \item Dibujar las curvas de nivel $f(x,y)=k$, para valores enteros de $k$ desde 1 hasta 5.
@@ -332,45 +332,49 @@
             % \end{enumerate}
             % \end{indication}
 
-      \item Dibujar el plano $x=1$. ¿Qué figura forma la intersección de este plano con la gráfica de $f$?
+      \item  Plot the plane with equation $x=1$.
+            What shape has the curve that results from the intersection of this plane and the graph of $f$?
+
             \begin{indication}
-            Enter the command \command{x=1} in the \field{Input Bar} y hacer clic en el círculo que aparece a la izquierda de esta expresión.
+            Enter the command \command{x=1} in the \field{Input Bar} and click the circle to the left of this expression.
             \end{indication}
 
-      \item Calcular the derivative of $f(1,y)$ en $y=2$.
+      \item Compute the derivative of $f(1,y)$ at $y=2$.
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la expresión \command{Derivative(f(1,y))} in the \field{Input Bar}.
-            \item Introducir la expresión \command{Sustituye(\$, y=2)} in the \field{Input Bar}.
+            \item Enter the command \command{Derivative(f(1,y))} in the \field{Input Bar}.
+            \item Enter the command \command{Substitute(\$, y=2)} in the \field{Input Bar}.
             \end{enumerate}
             \end{indication}
 
-      \item Dibujar el plano $y=2$. ¿Qué figura forma la intersección de este plano con la gráfica de $f$?
+      \item Plot the plane with equation $y=2$.
+            What shape has the curve that results from the intersection of this plane and the graph of $f$?
             \begin{indication}
-            Enter the command \command{y=2} in the \field{Input Bar} y hacer clic en el círculo que aparece a la izquierda de esta expresión.
+            Enter the command \command{y=2} in the \field{Input Bar} and click the circle to the left of this expression.
             \end{indication}
 
-      \item Calcular the derivative of $f(x,2)$ en $x=1$.
+      \item Compute la derivative of $f(x,2)$ at $x=1$.
             \begin{indication}
             \begin{enumerate}
-            \item Introducir la expresión \command{Derivative(f(x,2))} in the \field{Input Bar}.
-            \item Introducir la expresión \command{Sustituye(\$, x=1)} in the \field{Input Bar}.
+            \item Enter the command \command{Derivative(f(x,2))} in the \field{Input Bar}.
+            \item Enter the command \command{Substitute(\$, x=1)} in the \field{Input Bar}.
             \end{enumerate}
             \end{indication}
 
-      \item Calcular la derivadas parciales de $f$ en el punto $(1,2)$. ¿Qué conclusiones sacas?
+      \item Compute the partial derivatives of $f$ at the point $(1,2)$.
+            What conclusions can you draw?
             \begin{indication}
             \begin{enumerate}
-            \item To compute la derivada parcial con respecto a $x$, enter the command \command{f'\_x(x,y):=Derivative(f, x)} in the \field{Input Bar}.
-            \item To compute el valor de la derivada parcial con respecto a $x$ en el punto $(1,2)$, enter the function \command{f'\_x(1,2)} in the \field{Input Bar}.
-            \item To compute la derivada parcial con respecto a $y$, enter the command \command{f'\_y(x,y):=Derivative(f, y)} in the \field{Input Bar}.
-            \item To compute el valor de la derivada parcial con respecto a $y$ en el punto $(1,2)$, enter the function \command{f'\_y(1,2)} in the \field{Input Bar}.
+            \item To compute the partial derivative with respect to $x$, enter the command \command{f'\_x(x,y):=Derivative(f, x)} in the \field{Input Bar}.
+            \item To compute the value of the partial derivative with respect to $x$ at the point $(1,2)$, enter the function \command{f'\_x(1,2)} in the \field{Input Bar}.
+            \item To compute the partial derivative with respect to  $y$, enter the command \command{f'\_y(x,y):=Derivative(f, y)} in the \field{Input Bar}.
+            \item To compute the value of the partial derivative with respect to $y$ at the point $(1,2)$, enter the function \command{f'\_y(1,2)} in the \field{Input Bar}.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
 
 
-\item Calcular las siguientes derivadas parciales:
+\item Compute the following partial derivatives:
       \begin{enumerate}
       \item  $\dfrac{\partial }{\partial V}\dfrac{nRT}{V}.$
             \begin{indication}
@@ -383,34 +387,35 @@
             \end{indication}
       \end{enumerate}
 
-\item Given the function $f(x,y)=20-4x^2-y^2$, se pide calcular en el punto $(2,-3)$:
+
+\item Given the function $f(x,y)=20-4x^2-y^2$, compute at the point $(2,-3)$:
       \begin{enumerate}
-      \item Vector gradiente.
+      \item Gradient.
             \begin{indication}
             \begin{enumerate}
             \item Enter the function \command{f(x,y):=20-4x\^{}2-y\^{}2} in the \field{Input Bar} of the \field{CAS View}.
-            \item To compute la derivada parcial con respecto a $x$, enter the command \command{f'\_x(x,y):=Derivative(f, x)} in the \field{Input Bar}.
-            \item To compute la derivada parcial con respecto a $y$, enter the command \command{f'\_y(x,y):=Derivative(f, x)} in the \field{Input Bar}.
-            \item To compute el vector gradiente, enter the command \command{f'(x,y):=(f'\_x, f'\_y)} in the \field{Input Bar}.
-            \item To compute el vector gradiente en el punto $(2,-3)$, enter the function \command{f'(2,-3)}.
+            \item To compute the partial derivative with respect to $x$, enter the command \command{f'\_x(x,y):=Derivative(f, x)} in the \field{Input Bar}.
+            \item To compute the partial derivative with respect to $y$, enter the command \command{f'\_y(x,y):=Derivative(f, y)} in the \field{Input Bar}.
+            \item To compute the gradient, enter the command \command{f'(x,y):=(f'\_x, f'\_y)} in the \field{Input Bar}.
+            \item To compute the gradient at the point $(2,-3)$, enter the function \command{f'(2,-3)}.
             \end{enumerate}
             \end{indication}
 
-      \item Matriz hessiana.
+      \item Hessian matrix.
             \begin{indication}
             \begin{enumerate}
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial x^2}$, enter the command \command{f''\_\{xx\}(x,y):=Derivative(f'\_x, x)} in the \field{Input Bar}.
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial y\partial x}$, enter the command \command{f''\_\{xy\}(x,y):=Derivative(f'\_x, y)} in the \field{Input Bar}.
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial x\partial y}$, enter the command \command{f''\_\{yx\}(x,y):=Derivative(f'\_y, x)} in the \field{Input Bar}.
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial y^2}$, enter the command \command{f''\_\{yy\}(x,y):=Derivative(f'\_y, y)} in the \field{Input Bar}.
-            \item To compute la matriz Hessiana, enter the command \command{f''(x,y):=\{\{f''\_\{xx\}, f''\_\{yx\}\}, \{f''\_\{xy\}, f''\_\{yy\}\}\}} in the \field{Input Bar}.
-            \item To compute la matriz Hessiana en el punto $(2,-3)$, enter the function \command{f''(2,-3)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial x^2}$, enter the command \command{f''\_\{xx\}(x,y):= Derivative(f'\_x, x)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial y\partial x}$, enter the command \command{f''\_\{xy\}(x,y):= Derivative(f'\_x, y)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial x\partial y}$, enter the command \command{f''\_\{yx\}(x,y):= Derivative(f'\_y, x)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial y^2}$, enter the command \command{f''\_\{yy\}(x,y):= Derivative(f'\_y, y)} in the \field{Input Bar}.
+            \item To compute the Hessian matrix, enter the command \command{f''(x,y):=\{\{f''\_\{xx\}, f''\_\{yx\}\}, \{f''\_\{xy\}, f''\_\{yy\}\}\}} in the \field{Input Bar}.
+            \item To compute the Hessian matrix at the point $(2,-3)$, enter the function \command{f''(2,-3)} in the \field{Input Bar}.
             \end{enumerate}
             \end{indication}
 
-      \item Calcular el hessiano en el punto $(2,-3)$.
+      \item Hessian.
             \begin{indication}
-            Introducir la expresión \command{Determinante(\$)} in the \field{Input Bar}.
+            Enter the command \command{Determinant(\$)} in the \field{Input Bar}.
             \end{indication}
       \end{enumerate}
 
@@ -469,15 +474,15 @@
       % ¿Puedes predecir el valor de $\dfrac{{\partial ^3 f}} {{\partial y\partial x\partial z}}$?
       % \end{enumerate}
 
-\item Hallar la recta normal y el plano tangente a la superficie $S: x+2y-\log z +4 =0$ en el punto $(0,-2,1)$ y dibujarlos.
+\item Compute the normal line and the tangent plane to the surface $S: x+2y-\log z +4 =0$ at the point $(0,-2,1)$ and plot them.
       \begin{indication}
       \begin{enumerate}
       \item Enter the function \command{f(x,y,z):=x+2y-log(z)+4} in the \field{Input Bar} of the \field{CAS View}.
-      \item Para dibujar la gráfica de la función, introducir la ecuación \command{f(x,y,z)=0} in the \field{Input Bar} y activar a \field{Vista Gráficas 3D}.
-      \item Para dibujar el punto, introducir el punto \command{(0,-2,1)} in the \field{Input Bar} y hacer clic en el círculo que aparece a la izquierda de esta expresión.
-      \item To compute el gradiente, enter the expression \command{f'(x,y,z):=(Derivative(f,x), Derivative(f,y), Derivative(f,z))} in the \field{Input Bar}.
-      \item Para dibujar la recta normal, enter the expression \command{n(t):=(0,-2,1)+f'(0,-2,1)t} in the \field{Input Bar}.
-      \item Para dibujar el plano tangente, enter the expression \command{((x,y,z)-(0,-2,1))f'(0,-2,1)=0} in the \field{Input Bar} y hacer clic en el círculo que aparece a la izquierda de esta expresión.
+      \item To plot the graph of the surface, enter the expression \command{f(x,y,z)=0} in the \field{Input Bar} and activate the \field{3D Graphics View}.
+      \item To plot the point, enter the point \command{(0,-2,1)} in the \field{Input Bar}  and click the circle to the left of this expression.
+      \item To compute the gradient, enter the expression \command{f'(x,y,z):=(Derivative(f,x), Derivative(f,y), Derivative(f,z))} in the \field{Input Bar}.
+      \item To plot the normal line, enter the expression \command{n(t):=(0,-2,1)+f'(0,-2,1)t} in the \field{Input Bar}.
+      \item To plot the normal plane, enter the expression \command{((x,y,z)-(0,-2,1))f'(0,-2,1)=0} in the \field{Input Bar} and click the circle to the left of this expression.
       \end{enumerate}
       \end{indication}
 
@@ -492,53 +497,56 @@
       % \item Hacer clic sobre el botón \button{Hallar una derivada}.
       % \item En el cuadro de diálogo que aparece seleccionar la variable $y$ y hacer clic en el botón \button{Simplificar}.
       % \item Introducir la expresión \command{-\$i/\$j} donde \command{\$i} es la etiqueta de la expresión de la derivada
-      % parcial con respecto a $x$ y \command{\$j} es la etiqueta de la expresión de la derivada parcial con respecto a $y$.
+      % parcial with respect to $x$ y \command{\$j} es la etiqueta de la expresión de the partial derivative with respect to $y$.
       % \item Hacer clic sobre el botón \button{Sustituir}.
       % \item En el cuadro de diálogo que aparece, seleccionar $x$ e introducir el valor $0$, seleccionar $y$ e
       % introducir el valor $0$, y hacer clic en el botón \button{Simplificar}.
       % \end{enumerate}
       % \end{indication}
 
-\item Calcular la derivada direccional de la función $h(x,y)= 3x^2+y$ en el punto $(0,0)$, en la dirección del vector $(1,1)$.
+\item Compute directional derivative of the function $h(x,y)= 3x^2+y$ at the point $(0,0)$, along the vector $(1,1)$.
       \begin{indication}
       \begin{enumerate}
       \item Enter the function \command{h(x,y):=3x\^{}2+y} in the \field{Input Bar} of the \field{CAS View}.
-      \item To compute la derivada parcial con respecto a $x$, enter the command \command{h'\_x(x,y):= Derivative(h, x)} in the \field{Input Bar}.
-      \item To compute la derivada parcial con respecto a $y$, enter the command \command{h'\_y(x,y):= Derivative(h, y)} in the \field{Input Bar}.
-      \item To compute el vector gradiente, enter the command \command{h'(x,y):= (h'\_x, h'\_y}) in the \field{Input Bar}.
-      \item To compute la derivada direccional en el punto $(0,0)$ en la dirección del vector $(1,1)$, enter the command \command{h'(0,0)VectorUnitario((1,1))}.
+      \item To compute the partial derivative with respect to $x$, enter the command \command{h'\_x(x,y):= Derivative(h, x)} in the \field{Input Bar}.
+      \item To compute the partial derivative with respect to $y$, enter the command \command{h'\_y(x,y):= Derivative(h, y)} in the \field{Input Bar}.
+      \item To compute the gradient, enter the command \command{h'(x,y):= (h'\_x, h'\_y}) in the \field{Input Bar}.
+      \item To compute the directional derivative at the point $(0,0)$ along the vector $(1,1)$, enter the command \command{h'(0,0)UnitVector((1,1))}.
       \end{enumerate}
       \end{indication}
 
-\item Given the function $f(x,y)=x^3+y^3-3xy$, se pide:
+\item Given the function $f(x,y)=x^3+y^3-3xy$:
       \begin{enumerate}
-      \item Definirla y dibujar su gráfica. ¿Puedes identificar a simple vista sus extremos relativos?
+      \item Plot its graph.
+            Looking at the graph, can you determine the relative extrema of $f$?
             \begin{indication}
-            Enter the function \command{f(x,y):=x\^{}3+y\^{}3-3x*y} in the \field{Input Bar} of the \field{CAS View} y activar la \field{Vista Gráficas 3D}.
+            Enter the function \command{f(x,y):=x\^{}3+y\^{}3-3x*y} in the \field{Input Bar} of the \field{CAS View} and activate the \field{3D Graphics View}.
             \end{indication}
 
-      \item Calcular los puntos críticos que anulan el vector gradiente de $f$.
+      \item Compute critical points of $f$.
             \begin{indication}
             \begin{enumerate}
-            \item To compute la derivada parcial con respecto a $x$, enter the command \command{f'\_x(x,y):= Derivative(f, x)} in the \field{Input Bar}.
-            \item To compute la derivada parcial con respecto a $y$, enter the command \command{f'\_y(x,y):= Derivative(f, y)} in the \field{Input Bar}.
-            \item To compute el vector gradiente, enter the command \command{f'(x,y):= (f'\_x, f'\_y} in the \field{Input Bar}.
-            \item Para obtener los puntos críticos, enter the command \command{Resuelve(f'(x,y)=(0,0))} in the \field{Input Bar}.
+            \item To compute the partial derivative with respect to $x$, enter the command \command{f'\_x(x,y):= Derivative(f, x)} in the \field{Input Bar}.
+            \item To compute the partial derivative with respect to $y$, enter the command \command{f'\_y(x,y):= Derivative(f, y)} in the \field{Input Bar}.
+            \item To compute the gradient, enter the command \command{f'(x,y):= (f'\_x, f'\_y} in the \field{Input Bar}.
+            \item To get the critical points, enter the command \command{Solve(f'(x,y)=(0,0))} in the \field{Input Bar}.
             \end{enumerate}
             \end{indication}
 
-      \item Determinar los extremos relativos y los puntos de silla de $f$.
+      \item Determine the relative extrema and the saddle points of $f$.
             \begin{indication}
             \begin{enumerate}
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial x^2}$, enter the command \command{f''\_\{xx\}(x,y):=Derivative(f'\_x, x)} in the \field{Input Bar}.
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial y\partial x}$, enter the command \command{f''\_\{xy\}(x,y):=Derivative(f'\_x, y)} in the \field{Input Bar}.
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial x\partial y}$, enter the command \command{f''\_\{yx\}(x,y):=Derivative(f'\_y, x)} in the \field{Input Bar}.
-            \item To compute la derivada parcial de segundo orden $\frac{\partial\^2 f}{\partial y^2}$, enter the command \command{f''\_\{yy\}(x,y):=Derivative(f'\_y, y)} in the \field{Input Bar}.
-            \item To compute la matriz Hessiana, enter the command \command{f''(x,y):=\{\{f''\_\{xx\}, f''\_\{yx\}\}, \{f''\_\{xy\}, f''\_\{yy\}\}\}} in the \field{Input Bar}.
-            \item To compute el Hessiano, enter the command \command{H(x,y):=Determinante(f'')} in the \field{Input Bar}.
-            \item To compute el Hessiano en el punto crítico $(0,0)$ enter the command \command{H(0,0)} in the \field{Input Bar}. Como sale negativo hay un punto de silla en $(0,0)$.
-            \item To compute el Hessiano en el punto crítico $(1,1)$ enter the command \command{H(1,1)} in the \field{Input Bar}. Como sale positivo hay un extremo relativo en $(1,1)$.
-            \item Enter the command \command{f''\_\{xx\}(1,1)} in the \field{Input Bar}. Como sale positivo se trata de un mínimo relativo en $(1,1)$.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial x^2}$, enter the command \command{f''\_\{xx\}(x,y):= Derivative(f'\_x, x)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial y\partial x}$, enter the command \command{f''\_\{xy\}(x,y):= Derivative(f'\_x, y)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial x\partial y}$, enter the command \command{f''\_\{yx\}(x,y):= Derivative(f'\_y, x)} in the \field{Input Bar}.
+            \item To compute the second order partial derivative $\frac{\partial\^2 f}{\partial y^2}$, enter the command \command{f''\_\{yy\}(x,y):= Derivative(f'\_y, y)} in the \field{Input Bar}.
+            \item To compute the Hessian matrix, enter the command \command{f''(x,y):=\{\{f''\_\{xx\}, f''\_\{yx\}\}, \{f''\_\{xy\}, f''\_\{yy\}\}\}} in the \field{Input Bar}.
+            \item To compute the Hessian, enter the command \command{H(x,y):=Determinant(f'')} in the \field{Input Bar}.
+            \item To compute the Hessian at the critical point $(0,0)$ enter the command \command{H(0,0)} in the \field{Input Bar}.
+                  Since the hessian is negative, there is a saddle point at $(0,0)$.
+            \item To compute the Hessian at the critical point $(1,1)$ enter the command \command{H(1,1)} in the \field{Input Bar}.
+                  Since the hessian is positive, there is a saddle point at $(1,1)$.
+            \item Enter the command \command{f''\_\{xx\}(1,1)} in the \field{Input Bar}. Since this second derivative is positive, there is a local minimum at $(1,1)$.
             \end{enumerate}
             \end{indication}
       \end{enumerate}
@@ -546,28 +554,28 @@
 \end{enumerate}
 
 
-\section{Ejercicios propuestos}
+\section{Proposed exercises}
 \begin{enumerate}[leftmargin=*]
-\item Una nave espacial está en problemas cerca del sol.
-      Se encuentra en la posición $(1,1,1)$ y la temperatura de la nave cuando está en la posición $(x,y,z)$ viene dada por
+\item A spaceship, traveling near the sun, is in trouble.
+      The temperature at position $(x,y,z)$ is given by
       \[T(x,y,z)=\mbox{e}^{-x^2-2y^2-3z^2},\]
-      donde $x,y,z$ se miden en metros.
-      ¿En qué dirección debe moverse la nave para que la temperatura decrezca lo más rápidamente posible?
+      where the variables are measured
+      in thousands of kilometers, and we assume the sun is at position $(0,0,0)$.
+      If the ship is at position $(1,1,1)$, find the direction in which it should move so that the temperature will decrease as fast as possible.
 
-\item Calcular el vector gradiente, la matriz hessiana y el hessiano de la función
+\item Compute the gradient, the Hessian matrix and the Hessian of the function
       \[
       g(x,y,z) = \frac{x}{\sqrt{x^2+y^2+z^2}^3}
       \]
-      en el punto $(1,1,1)$ y en el punto $(0,3,4)$.
+      at the point $(1,1,1)$ and at the point $(0,3,4)$.
 
-\item Obtener los puntos del elipsoide $S: x^2+2y^2+z^2=1$ en los que el plano tangente es paralelo al plano $\Pi:
+\item Determine the points of the ellipsoid $S: x^2+2y^2+z^2=1$ where the tangent plane is parallel to the plane $\Pi:
       x-y+2z^2=0$.
 
-\item Estudiar los extremos relativos de la función
+\item Determine the relative extrema of the function
       \[
       f(x)=-\frac{y}{9+x^2+y^2}.
       \]
 
-\item Calcular la derivada direccional del campo escalar $f(x,y,z)=x^2-y^2+xyz^3-zx$ en el punto $(1,2,3)$ y en la
-      dirección del vector $(1,-1,0)$.
+\item Compute the directional derivative of the scalar field $f(x,y,z)=x^2-y^2+xyz^3-zx$ at the point $(1,2,3)$ along the vector $(1,-1,0)$.
 \end{enumerate}
