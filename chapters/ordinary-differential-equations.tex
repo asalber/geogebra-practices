@@ -216,8 +216,8 @@
       How long will it take, from the beginning of the process, for the 95\% of the sugar to be dissolved?
       \begin{indication}
       \begin{enumerate}
-      \item The differential equation that explains the dissolution of sugar into water is $y'=ky$, where $y$ is the amount of sugar, $t$ is time and $k$ is the dissolution constant of sugar.
-      \item To solve the differential equation enter the command \command{SolveODE(a'=k*a, a, t, (0, 13.6)} in the \field{Input Bar} of the \field{CAS View}.
+      \item The differential equation that explains the dissolution of sugar into water is $s'=ks$, where $s$ is the amount of sugar, $t$ is time and $k$ is the dissolution constant of sugar.
+      \item To solve the differential equation enter the command \command{SolveODE(s'=k*s, s, t, (0, 13.6)} in the \field{Input Bar} of the \field{CAS View}.
       \item To impose the second initial condition enter the command \command{Substitute(\$, t=4, a=4.5)} in the \field{Input Bar}.
       \item To get the value of the dissolution constant enter the command \command{Solve(\$)} in the \field{Input Bar}.
       \item To replace the value of the dissolution constant in the particular solution enter the command  \command{Substitute(\$$n$,\$)} in the \field{Input Bar}, whee $n$ is the identifier of the line that contains the particular solution of the differential equation.
